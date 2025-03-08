@@ -1,16 +1,93 @@
-\version "2.24.0"
+\version "2.24.2"
 
-KyrieBassoNotes = {
+KyrieBassoSoloNotes = {
+  \relative c {
+    \clef bass
+    \key b \major \time 3/4 \autoBeamOff \tempoKyrie
+    R2.*17 %17
+    c4. c'8 b!4
+    b,4. b'8 a as\p
+    g([ e)] f cis d g, %20
+    c4 c r
+    c'8.\sf c,16 c4 r8 c'\f
+    c4 c,8 c\p d e
+    f b,16 b c2
+    f,4 r r %25
+    R2.*9 %34
+    f'4. f8 f f %35
+    b4 a r
+    R2.*2
+    g2 g8 g
+    c4 b r %40
+    R2.*5 %45
+    r4 r r8 b,
+    es4 es r8 d
+    a4 a' b(
+    e,) e e
+    f2.~ %50
+    f
+    f4 r r
+    R2.*13 %65
+    f4. d8 b as'
+    g4 ges f\cresc
+    e( es) d8 des\p
+    c([ a)] b fis' g c,
+    f4 f r %70
+    f8.\sf f16 f4 r8 es
+    d([ f)] b a g f
+    es es16 es f2
+    b,4 r r
+    R2.*12 %86
+    R2.\fermata \bar "|." %87 finis
+  }
+}
+
+KyrieBassoSoloLyrics = \lyricmode {
+  Ky -- ri -- e, %18
+  Ky -- ri -- e e --
+  lei -- son, Chri -- ste e -- %20
+  lei -- son,
+  Ky -- ri -- e e --
+  lei -- son, Chri -- ste e --
+  lei -- son, e -- lei --
+  son. %25
+
+  Ky -- ri -- e e -- %35
+  lei -- son,
+
+  Chri -- ste e -- %49
+  lei -- son, %40
+
+  e -- %45
+  lei -- son, e --
+  lei -- son, Chri --
+  ste e --
+  lei -- %50
+
+  son.
+
+  Ky -- ri -- e e -- %66
+  lei -- son, e --
+  lei -- son, e --
+  lei -- son, Chri -- ste e --
+  lei -- son, %70
+  Ky -- ri -- e e --
+  lei -- son, Chri -- ste e --
+  lei -- son, e -- lei --
+  son. %74 finis
+}
+
+KyrieBassoTuttiNotes = {
   \relative c {
     \clef bass
     \key b \major \time 3/4 \autoBeamOff \tempoKyrie
     R2.
-    \mvTr b4.\pE^\tuttiE b8 b b
+    b4.\p b8 b b
     b4 b r
     b4. b8 b b
     b4 b r %5
-    \mvDll es'8.\fE es,16 es4 r
-    d'8. d,16 d4 r8 d
+    \mvDll es'8.\sf es,16 es4 r
+    \mvDll d'8.\sf d,16 d4 r8 d
     a8.([ a'16)] a4 r8 b
     f4 f, r
     R2. %10
@@ -21,76 +98,68 @@ KyrieBassoNotes = {
     r4 r es %15
     f g g,
     c c r
-    \mvTr c4.\pE^\solo c'8 b!4
-    b,4. b'8 a as
-    g([ e)] f cis d g, %20
-    c4 c r
-    c'8. c,16 c4 r8 c'
-    c4 c,8 c d e
-    f b,16 b c2
-    f,4 r8 \mvTr c'\fE^\tuttiE d e %25
+    R2.*3 %20
+    r8 c\pp c8.([ des16)] c4
+    r c8.\sf c16 c4
+    r \mvDll c'8.\sfp c,16 c4
+    r r8 c\pp c4
+    c r8 c\fE d e %25
     f([ a)] g c,16 c d8 e
     f([ a)] g c, d e
-    f4 fis g
-    gis a b!
-    c cis r8 d %30
+    f4\cresc fis g
+    gis a\f b!8 b
+    c4\decresc cis r8 d\pp %30
     b b,16 b c2
     f,4 r r
-    R2.*2
-    \mvTr f'4.\pE^\solo f8 f f %35
-    b4 a \mvTr a\fE^\tutti
+    R2.*3 %35
+    r4 r a'\fE
     b c c,
     f f, r
-    \mvTr g'2\pE^\solo g8 g
-    c4 b \mvTr b\fE^\tuttiE %40
+    R2.
+    r4 r b' %40
     c d d,
     g g, r
     R2.
-    r4 c'8. c,16 c4
+    r4 c'8.\f c,16 c4
     R2. %45
-    r4 b'8. b,16 b4
-    es4 es r8 d
-    a4 a' b
-    e, e e
-    f2.~ %50
-    f
+    r4 b'\f b,
+    r8 f'\pp ges8.([ f16)] f4
+    r8 f ges8.([ f16)] f4
+    R2.*2 %50
+    r8 c' des a b([ e,)]
     f4 r r
     R2.*2
-    b,4.\pE b8 b b %55
+    b,4.\p b8 b b %55
     b4 b r
     b4. b8 b b
     b4 b r
-    \mvDll es'8.\fE es,16 es4 r
-    d'8. d,16 d4 r8 d %60
+    \mvDll es'8.\sf es,16 es4 r
+    \mvDll d'8.\sf d,16 d4 r8 d %60
     a8.([ a'16)] a4 r8 b
     f4 f, r
-    R2.*3 %65
-    \mvTr f'4.\pE^\soloE d8 b as'
-    g4 ges f
-    e( es) d8 des
-    c([ a)] b fis' g c,
-    f4 f r %70
-    f8. f16 f4 r8 es
-    d([ f)] b a g f
-    es es16 es f2
-    b,4 r8 \mvTr f'\fE^\tutti f f
+    R2.*7 %69
+    r8 f'\pp f8.([ ges16)] f4 %70
+    r f8.\sf f16 f4
+    r \mvDll d'8.\sf d,16 d4
+    r r8 f\pp f4
+    f r8 f\fE f f
     f8.([ g16)] f8 f16 f f8 f %75
     f8.([ g16)] f8 f f f
-    b,4 h c
-    cis d es!
-    f fis\fermata r8 g
+    b,4\cresc h c
+    cis d\f es!8 es
+    f4 fis\fermata r8 g\pp
     es es16 es f4( f,) %80
-    b^\critnote r r
-    b'8.\ffE b,16 b4 r
-    b'8. b,16 b4 r
-    b'8. b,16 b4 r
-    f'4\ppE f2 %85
-    b, r4
+    b r r
+    b'8.\f b,16 b4 r
+    b'8.\cresc b,16 b4 r
+    b'8.\ff b,16 b4 r
+    f'4\pp f2 %85
+    b,4 r r
     R2.\fermata \bar "|." %87 finis
   }
 }
 
-KyrieBassoLyrics = \lyricmode {
+KyrieBassoTuttiLyrics = \lyricmode {
   Ky -- ri -- e e -- %2
   lei -- son,
   Ky -- ri -- e e --
@@ -98,48 +167,44 @@ KyrieBassoLyrics = \lyricmode {
   Ky -- ri -- e,
   Ky -- ri -- e e --
   lei -- son, e --
-  lei -- son.
+  lei -- son,
   %10
-  E --
+  e --
   lei -- son, e --
   lei -- son,
 
   e -- %15
   lei -- son, e --
-  lei -- son.
-  Ky -- ri -- e,
-  Ky -- ri -- e e --
-  lei -- son, Chri -- ste e -- %20
   lei -- son,
-  Ky -- ri -- e e --
-  lei -- son, Chri -- ste e --
-  lei -- son, e -- lei --
-  son. Chri -- ste e -- %25
+
+  e -- lei -- son, %21
+  Ky -- ri -- e,
+  Ky -- ri -- e
+  e -- lei --
+  son, Chri -- ste e -- %25
   lei -- son, Ky -- ri -- e e --
   lei -- son, Chri -- ste e --
-  lei -- son, e --
-  lei -- son, e --
+  lei -- son, Chri --
+  ste, Chri -- ste e --
   lei -- son, e -- %30
   lei -- son, e -- lei --
   son.
 
-  Ky -- ri -- e e -- %35
-  lei -- son, e --
+  E -- %36
   lei -- son, e --
   lei -- son,
-  Chri -- ste e --
-  lei -- son, e -- %40
+
+  e -- %40
   lei -- son, e --
   lei -- son,
 
   Ky -- ri -- e,
   %45
-  Ky -- ri -- e,
-  Chri -- ste e --
-  lei -- son, e --
-  lei -- son, e --
-  lei -- %50
+  Chri -- ste,
+  e -- lei -- son,
+  e -- lei -- son,
 
+  Chri -- ste e -- lei -- %51
   son.
 
   Ky -- ri -- e e -- %55
@@ -149,24 +214,20 @@ KyrieBassoLyrics = \lyricmode {
   Ky -- ri -- e,
   Ky -- ri -- e e -- %60
   lei -- son, e --
-  lei -- son.
+  lei -- son,
 
-  \xE Ky -- ri -- e \x e -- %66
-  lei -- son, e --
-  lei -- son, e --
-  lei -- son, Chri -- ste e --
-  lei -- son, %70
-  Ky -- ri -- e e --
-  lei -- son, Chri -- ste e --
-  lei -- son, e -- lei --
-  son. Chri -- ste e --
+  e -- lei -- son, %70
+  Ky -- ri -- e,
+  Ky -- ri -- e,
+  e -- lei --
+  son, Chri -- ste e --
   lei -- son, Ky -- ri -- e e -- %75
   lei -- son, Chri -- ste e --
-  lei -- son, e --
-  lei -- son, e --
+  lei -- son, Chri --
+  ste, Chri -- ste e --
   lei -- son, e --
   lei -- son, e -- lei -- %80
-  son.
+  son,
   Ky -- ri -- e,
   Ky -- ri -- e,
   Ky -- ri -- e

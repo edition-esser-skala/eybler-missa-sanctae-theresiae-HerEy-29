@@ -1,16 +1,103 @@
-\version "2.24.0"
+\version "2.24.2"
 
-KyrieTenoreNotes = {
+KyrieTenoreSoloNotes = {
+  \relative c' {
+    \clef "treble_8"
+    \key b \major \time 3/4 \autoBeamOff \tempoKyrie
+    R2.*17 %17
+    a!4. fis'8 g4
+    g,4. e'8 f c\p
+    d([ des)] c b a d %20
+    c4 c r
+    c8.\sf b16 g4 r8 e'\f
+    g8.([ b,16)] b8 e\p f c
+    c16([ a)] d b a4.( \grace c16 b8)
+    a4 r r %25
+    R2.*9
+    a4. es'!8 d b %35
+    g4 a r
+    R2.*2
+    b4.( d8) es c
+    a4 b r %40
+    R2.*2
+    f'!4. es8 d c
+    h4 c r
+    es4.( d8) c b %45
+    a4 b r8 b
+    a8.([ c16)] c4 r8 b
+    c4 c b~
+    b c des8([ b)]
+    f2.~ %50
+    f
+    f4 r r
+    R2.*11 %63
+    g'4. es8 c g
+    b8.([ a16)] a4 r %65
+    r r r8 d
+    es4 b b\cresc
+    b( c) d8 b\p
+    b([ c)] d es d g
+    f4 f r %70
+    a,8.\sf c16 es4 r8 c
+    b([ c)] d c b h
+    c16([ h)] c es d4.( es8)
+    d4 r r
+    R2.*12 %86
+    R2.\fermata \bar "|." %87 finis
+  }
+}
+
+KyrieTenoreSoloLyrics = \lyricmode {
+  Ky -- ri -- e, %18
+  Ky -- ri -- e e --
+  lei -- son, Chri -- ste e -- %20
+  lei -- son,
+  Ky -- ri -- e e --
+  lei -- son, Chri -- ste e --
+  lei -- son, e -- lei --
+  son. %25
+
+  Ky -- ri -- e e -- %35
+  lei -- son,
+
+  Chri -- ste e --
+  lei -- son, %40
+
+  Ky -- ri -- e e -- %43
+  lei -- son,
+  Chri -- ste e -- %45
+  lei -- son, e --
+  lei -- son, e --
+  lei -- son, Chri --
+  ste e --
+  lei -- %50
+
+  son.
+
+  Ky -- ri -- e e -- %64
+  lei -- son, %65
+  e --
+  lei -- son, e --
+  lei -- son, e --
+  lei -- son, Chri -- ste e --
+  lei -- son, %70
+  Ky -- ri -- e e --
+  lei -- son, Chri -- ste e --
+  lei -- son, e -- lei --
+  son. %74 finis
+}
+
+KyrieTenoreTuttiNotes = {
   \relative c' {
     \clef "treble_8"
     \key b \major \time 3/4 \autoBeamOff \tempoKyrie
     R2.
-    \mvTr b4.\pE^\tuttiE d8 a c
+    b4.\p d8 a c
     b8.([ d16)] d4 r
     es4. b8 g' es
     c4 d r %5
-    c8.\fE c16 c4 r
-    b8. d16 d4 r8 b
+    c8.\sf c16 c4 r
+    b8.\sf d16 d4 r8 b
     c4 c r8 b
     b4 a r
     R2. %10
@@ -21,78 +108,68 @@ KyrieTenoreNotes = {
     r4 r c %15
     c h d
     c8.([ d16)] es4 r
-    \mvTr a,4.\pE^\solo fis'8 g4
-    g,4. e'8 f c
-    d([ des)] c b a d %20
-    c4 c r
-    c8. b16 g4 r8 e'
-    g8.([ b,16)] b8 e f c
-    c16([ a)] d b a4.( b8)
-    a4 r8 \mvTr c\fE^\tutti c c %25
+    R2.*3 %20
+    r8 c,\pp c8.([ des16)] c4
+    r b'8.\sf g16 e4
+    r c'8.\sfp c,16 c4
+    r r8 c\pp c4
+    c r8 c'\fE c c %25
     c8.([ d16)] c8 c16 c c8 c
     c8.([ d16)] c8 c c c
-    c4 a d
-    h e d8([ g)]
-    e8.([ g16)] g4 r8 f %30
+    c4\cresc a d
+    h e\f d8 g
+    e8.([\decresc g16)] g4 r8 f\pp %30
     d16([ b)] g b a4.( \grace c16 b8)
     a4 r r
-    R2.*2
-    \mvTr a4.\pE^\solo es'!8 d b %35
-    g4 a \mvTr f'\fE^\tutti
+    R2.*3
+    r4 r f'\fE
     f e c
-    \appoggiatura d16 c8([^\critnote b16 a)] a4 r
-    \mvTr b4.\pE^\solo d8 es c
-    a4 b \mvTr g\fE^\tutti %40
+    c8([ b16 a)] a4 r
+    R2.
+    r4 r g %40
     es' d d
-    \appoggiatura es16 d8([^\critnote c16 b)] b4 r
-    f'!4. es8 d c
-    h4 c r
-    es4. d8 c b %45
-    a4 b r8 b
-    a8.([ c16)] c4 r8 b
-    c4 c b
-    b c des8([ b)]
-    f2.~ %50
-    f
-    f4^\critnote r r
+    d8([ c16 b)] b4 r
+    R2.
+    r4 es8.\f c16 es4
+    R2. %45
+    r4 d\f d
+    r8 f,\pp ges8.([ f16)] f4
+    r8 f ges8.([ f16)] f4
     R2.*2
-    b4.\pE d8 a c %55
+    r8 a b c des([ b)]
+    f4 r r
+    R2.*2
+    b4.\p d8 a c %55
     b8.([ d16)] d4 r
     es4. b8 g' es
     c4 d r
-    c8.\fE c16 c4 r
-    b8. d16 d4 r8^\critnote b %60
+    c8.\sf c16 c4 r
+    b8.\sf d16 d4 r8 b %60
     c4 c r8 b
     b4 a r
-    R2.
-    \mvTr g'4.\pE^\solo es8 c g
-    b8.([ a16)] a4 r %65
-    r r r8 d
-    es4 b b
-    b( c) d8 b
-    b([ c)] d es d g
-    f4 f r %70
-    a,8. c16 es4 r8 c
-    b([ c)] d c b h
-    c16([ h)] c es d4.( es8)
-    d4 r8 \mvTr a\fE^\tutti b c
+    R2.*7 %69
+    r8 f\pp f8.([ ges16)] f4 %70
+    r es'8.\sf c16 a4
+    r d8.\sf d,16 d4
+    r r8 f\pp f4
+    f r8 a\fE b c
     d([ b)] f a16 a b8 c %75
     d([ b)] f a b c
-    d4 d g,
-    e' a, g8([ c)]
-    a8.([ c16)] c4\fermata r8 b
+    d4\cresc d g,
+    e' a,\f g8 c
+    a8.([ c16)] c4\fermata r8 b\pp
     es16([ c)] d es d4.( es8) %80
     d4 r r
-    d8.\ff b16 b4 r
-    f'8. d16 d4 r
-    b8. d16 d4 r
+    d8.\f b16 b4 r
+    f'8.\cresc d16 d4 r
+    b8.\ff d16 d4 r
     a\pp a2 %85
-    b r4
+    b4 r r
     R2.\fermata \bar "|." %87 finis
   }
 }
 
-KyrieTenoreLyrics = \lyricmode {
+KyrieTenoreTuttiLyrics = \lyricmode {
   Ky -- ri -- e e -- %2
   lei -- son,
   Ky -- ri -- e e --
@@ -100,48 +177,44 @@ KyrieTenoreLyrics = \lyricmode {
   Ky -- ri -- e,
   Ky -- ri -- e e --
   lei -- son, e --
-  lei -- son.
+  lei -- son,
   %10
-  E --
+  e --
   lei -- son, e --
   lei -- son,
 
   e -- %15
   lei -- son, e --
-  lei -- son.
-  Ky -- ri -- e,
-  Ky -- ri -- e e --
-  lei -- son, Chri -- ste e -- %20
   lei -- son,
-  Ky -- ri -- e e --
-  lei -- son, Chri -- ste e --
-  lei -- son, e -- lei --
-  son. Chri -- ste e -- %25
+
+  e -- lei -- son, %21
+  Ky -- ri -- e,
+  Ky -- ri -- e
+  e -- lei --
+  son, Chri -- ste e -- %25
   lei -- son, Ky -- ri -- e e --
   lei -- son, Chri -- ste e --
-  lei -- son, e --
-  lei -- son, e --
+  lei -- son, Chri --
+  ste, Chri -- ste e --
   lei -- son, e -- %30
   lei -- son, e -- lei --
   son.
 
-  Ky -- ri -- e e -- %35
-  lei -- son, e --
-  lei -- son, e --
-  lei -- son,
-  Ky -- ri -- e e --
-  lei -- son, e -- %40
+  E -- %36
   lei -- son, e --
   lei -- son,
-  Ky -- ri -- e e --
-  lei -- son,
-  Ky -- ri -- e e -- %45
-  lei -- son, e --
-  lei -- son, e --
-  lei -- son, e --
-  lei -- son, e --
-  lei -- %50
 
+  e -- %40
+  lei -- son, e --
+  lei -- son,
+
+  Ky -- ri -- e,
+  %45
+  Chri -- ste,
+  e -- lei -- son,
+  e -- lei -- son,
+
+  Chri -- ste e -- lei -- %51
   son.
 
   Ky -- ri -- e e -- %55
@@ -151,26 +224,20 @@ KyrieTenoreLyrics = \lyricmode {
   Ky -- ri -- e,
   Ky -- ri -- e e -- %60
   lei -- son, e --
-  lei -- son.
+  lei -- son,
 
-  Ky -- ri -- e e --
-  lei -- son, %65
-  e --
-  lei -- son, e --
-  lei -- son, e --
-  lei -- son, Chri -- ste e --
-  lei -- son, %70
-  Ky -- ri -- e e --
-  lei -- son, Chri -- ste e --
-  lei -- son, e -- lei --
-  son. Chri -- ste e --
+  e -- lei -- son, %70
+  Ky -- ri -- e,
+  Ky -- ri -- e,
+  e -- lei --
+  son, Chri -- ste e --
   lei -- son, Ky -- ri -- e e -- %75
   lei -- son, Chri -- ste e --
-  lei -- son, e --
-  lei -- son, e --
+  lei -- son, Chri --
+  ste, Chri -- ste e --
   lei -- son, e --
   lei -- son, e -- lei -- %80
-  son.
+  son,
   Ky -- ri -- e,
   Ky -- ri -- e,
   Ky -- ri -- e

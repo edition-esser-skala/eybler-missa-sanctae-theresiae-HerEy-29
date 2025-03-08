@@ -1,9 +1,13 @@
-\version "2.24.0"
+\version "2.24.2"
 
 #(define option-movement-title-format "number-title")
-#(define option-print-all-bar-numbers #f)
+#(define option-print-all-bar-numbers #t)
 \include "ees.ly"
+\include "ees_articulate.ly"
 
+
+hA = \once \override Accidental.stencil = ##f
+mvTl = \once \override TextScript.X-offset = #-2
 
 vlne =    \markup \remark  "vlne"
 vlneE =   \markup \remarkE "vlne"
@@ -31,6 +35,8 @@ tempoAgnus = \tempoMarkup "Adagio"
 
 \include "notes/ob1.ly"
 \include "notes/ob2.ly"
+\include "notes/cor1.ly"
+\include "notes/cor2.ly"
 \include "notes/clno1.ly"
 \include "notes/clno2.ly"
 \include "notes/timp.ly"
