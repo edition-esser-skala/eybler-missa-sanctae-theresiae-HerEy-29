@@ -240,7 +240,7 @@ GloriaBassoNotes = {
     \clef bass
     \key b \major \time 4/4 \autoBeamOff \tempoGloria
     \mvTr b'4\f^\tuttiE b8 b c4 c
-    es2 d
+    es2\sf d\sf
     g,( a)
     b r
     f4. a8 c4 r %5
@@ -248,7 +248,7 @@ GloriaBassoNotes = {
     es d c b
     a f r2
     R1
-    des2\pE r %10
+    des2\p r %10
     des4 ges as as,
     des des2 des4
     c2 c
@@ -256,40 +256,40 @@ GloriaBassoNotes = {
     c4. c8 c4 r %15
     r2 r4 des
     c2. c4
-    des r des des
-    a!2 a4 a
-    b r des b %20
+    des r \hA des des
+    a!2. a8 a
+    b4 r des b %20
     ges'2. ges4
-    f^\critnote r r2
-    r4 b\fE c c
-    es2^\critnote d4 d
+    f r r2
+    r4 b\f c c
+    es2 d4 d
     g,2 a %25
     b4 r b, d
     f f r2
     r4 f b, d
     f f r2
     R1 %30
-    r4 f~\pE f8[ g] a([ b)]
+    r4 f~\p f8[ g] a([ b)]
     c4. a8 f4 r
     r f~ f8[ g] a([ b)]
-    c4.( a8) f4 g\fE
+    c4.( a8) f4 g\f
     es2 c4 es %35
     d g es f
     b r g r
     d b' b b
-    b2 b,
+    b2\sf b,
     es4 g f e %40
-    f2 f,
-    b4^\critnote r r2
+    f2\sf f
+    b,4 r r2
     R1*3 %45
-    b4.\pE b8 b4 r
+    b4.\p b8 b4 r
     b'4. b,8 b4 r
     b( d) f d
     b es r2
     as, as' %50
     ges f
-    es(\fE des
-    ces) es4 ges
+    es\cresc des
+    ces\f es4 ges
     ces1
     b4 r r2 %55
     \mvTr b2~\pE^\solo b8[ c] d es
@@ -300,56 +300,56 @@ GloriaBassoNotes = {
     es4. es,8 es4 r
     r b'( g) es
     b' b, r2
-    r4 d^\tutti d es
+    r4 \mvTr d\p^\tutti d es
     as2 g4 r %65
     r d d es
     as4. as8 g4 r
-    r d'2\fE es4
-    as,2 f4 as
+    r d'2\f es4
+    as,2 f4 \hA as
     g c as b %70
-    es,^\critnote r r2
+    es, r r2
     R1*11 %82
-    r4 h\pE h c
+    r4 \mvTr h\p^\tutti h c
     f2 es4 r
     r h h c %85
     f4. f8 es4 r
-    r d'2\fE c4
+    r \mvDl d'2\f c4
     f,2 d4 f
     es f g g,
-    c^\critnote r r2 %90
+    c r r2 %90
     R1*10 %100
-    r4 f~\pE f8[ g] a([ b)]
+    r4 \mvTr f~\p^\tutti f8[ g] a([ b)]
     c4.( a8) f4 r
     r f~ f8[ g] a([ b)]
     c4. a8 f4 r
     r f~ f8[ g] a([ b)] %105
-    c4.( a8) f4 g\fE
+    c4.( a8) f4 g\f
     es2 c4 es
     d g c, f
     b, r b' r
     b1\fermata %110
-    h2 c4 es
+    h2\f c4 es
     a,2 b4 as
     g es f f,
-    b2 b4\pE b
+    b2 b4\pp b
     b1 %115
     b2 b4 b
     b2. b4
     b2 b4 b
-    b1
+    b1\cresc
     b2 b4 b %120
     b b b b
-    b'2\fE as
-    g c4 es
+    b'2\f as
+    g\ff c4 es
     f,2 b4 as
-    g es f f, %125
-    b r b' r
+    g es f f %125
+    b, r b' r
     b2 r4 d,
-    es c f f,
-    b r g' r
+    es c f f
+    b r g r
     es2 r4 f %130
-    b g es f
-    b,2 r
+    d g es f
+    b, r r2
     R1*4 %136
     R1\fermata \bar "||" %137 finis
   }
@@ -381,8 +381,8 @@ GloriaBassoLyrics = \lyricmode {
   glo -- ri -- fi --
   ca -- mus, lau --
   da -- mus %25
-  te, ad -- o --
-  ra -- mus,
+  te, te lau --
+  da -- mus,
   glo -- ri -- fi --
   ca -- mus,
   %30
@@ -404,9 +404,9 @@ GloriaBassoLyrics = \lyricmode {
   a -- gi -- mus
   ti -- bi
   pro -- pter %50
-  \xE ma -- gnam
-  glo --
-  \x ri -- am
+  ma -- gnam
+  glo -- _
+  _ ri -- am
   tu --
   am. %55
   Do -- mi -- ne
@@ -475,31 +475,31 @@ QuiTollisBassoNotes = {
     \key g \minor \time 3/4 \autoBeamOff \tempoQuiTollis
       \set Score.currentBarNumber = #138
     \partial 8 r8 R2.*7 %144
-    \mvTrr es4.\ppE^\tuttiE d8 c b %145
+    es4.\pp d8 c b %145
     a8.([ b16)] a4 r
-    f'4. es8 d c
-    h8.([ c16)] h4 r
-    r f'8 f f8.([ es16)]
-    d4^\critnote r r %150
+    f'4.\cresc es8 d c
+    h8.([ c16)] \hA h4\! r
+    r f'8\pp f f8.([ es16)]
+    d4 r r %150
     R2.*7 %157
-    \mvTr es4\pE^\tutti es8 es es es
-    e2 f4
+    es4\p es8 es es es
+    e2 f4\cresc
     g2 as4 %160
-    es as r
-    d,!4. d8 d d
+    es as\! r
+    d,!4.\pp d8 d d
     des4( c) d
-    es2.
-    as,4 r r %165
+    \after 4. \> es2.\<
+    as,4\! r r %165
     R2.*8 %173
-    f'4.^\tutti e8 f g
+    f'4.\pp e8 f g
     g8.([ as16)] as4 r %175
     g4. fis8 g a
     a8.([ b16)] b4 r
-    r es,8.([ d16)] d4
+    r es,!8.([ d16)] d4
     r d8 d d4
-    d8 d'4 c8 h a %180
+    d8 d'4\sf c8 h a %180
     g4 g, r
-    r8 g'4 g8 es c
+    r8 g'4\sf g8 es c
     g2.
     g4 r r\fermata \bar "||" %184 finis
   }
@@ -526,10 +526,10 @@ QuiTollisBassoLyrics = \lyricmode {
   no -- bis, %175
   mi -- se -- re -- re
   no -- bis,
-  no -- bis,
+  no -- bis
   mi -- se -- re --
-  re, mi -- se -- re -- re %180
-  no -- bis,
+  re, no -- bis mi -- se -- %180
+  re -- re,
   mi -- se -- re -- re
   no --
   bis. %184 finis
@@ -541,84 +541,84 @@ QuoniamBassoNotes = {
     \key b \major \time 4/4 \autoBeamOff \tempoQuoniam
       \set Score.currentBarNumber = #185
     \partial 8 r8 R1*3 %187
-    r2 r4 r8 \mvTr f\fE^\tuttiE
+    r2 r4 r8 \mvTr f\f^\tutti
     c'4 a8 f d([ f)] b g
     es c f4 b, r %190
     R1
-    r2 r4 r8 f'
+    r2 r4 r8 \mvTr f'\f^\tutti
     c'4 a8 f d([ f)] b g
     es c f8. f16 b,4 r
     R1*7 %201
-    r8 g' e c f8.([ a16)] c4
+    r8 \mvTr g'\f^\tutti e c f8.([ a16)] c4
     r8 g e c f8. f16 es'!4
     d c8 c b4 b,8 b
     a b c4 f r %205
     R1*4
-    r8 f d b f'4 f %210
+    r8 \mvTr f\fE^\tutti d b f'4 f %210
     R1
-    r8 f d b f'8. f16 f4
+    r8 \mvTr f\f^\tuttiE d b f'8. f16 f4
     R1*6 %218
-    r8 c' a f b4 d
+    r8 \mvTr c'\f^\tutti a f b4 d
     r8 c a f b4 as8 as %220
     g4 f8 f es4 c8 es
     d g f4 b, r
     R1*2
-    r8 f' a c a8.([ f16)] f4 %225
+    r8 f'\p a c a8. f16 f4 %225
     r8 f b d b8. f16 f4
     R1
-    \tempoCumSancto f4 d8 b b'8. b16 g8 g16([ f)]
+    \tempoCumSancto f4\f d8 b b'8. b16 g8 g16([ f)]
     es([ f)] es d c8 f d8 b r4
-    r8 d'16[ c] b[ c b a] g[ a g f] e[ c d e] %230
+    r8 d'16[ c] b[ c b a] g[ a g f] e[ c d \hA e] %230
     f4 r8 g4 es c8~
     c[ d16 es] f4 b, r
     R1
     r8 f'16[( es!] d[ es d c] b8) b' r4
-    r8 es,16[( d] c[ d c b] a8) a' r4 %235
+    r8 es,16^[( d] c[ d c b] a8) a' r4 %235
     r8 d,16[( c] b[ c b a] g8) g' r es~
     es c4 a b16[ c] d4
     g, r r8 b'16[ a] g[ a g f]
-    e[ f e d] cis[ a h? cis] d4 g8.[ f!16]
-    es8 c r4 r2 %240
+    e[ f \hA e d] cis[ a h \hA cis] d4 g8.[( f16]
+    es8) c r4 r2 %240
     g'4 es8 c a'8. a16 f8 d
-    b' b16 b g8 es c' c16([ b)] as([ b as g]
-    f[ g f es] d8) b' r b16[ as] g[ as g f]
-    es[ f es d] c8 as' r as16[ g] f[ g f es]
+    b' b16 b g8 es c' c16([ b)] as([ b \hA as g]
+    f[ g f es] d8) b' r b16[ as] g[ \hA as g f]
+    es[ f es d] c8 as' r \hA as16[ g] f[ g f es]
     d[ es d c] b8[ c16 d] es8[ g16 f] es[ f g es] %245
     c2 d
     es f
-    g4^\critnote r r r8 g16([ f]
+    g4 r r r8 g16([ f]
     es[ f es d] c8) c' r4 r8 f,16([ es]
     d[ es d c] b8) b' r2 %250
     r4 f4 d8 b b'8. b16
-    g8 g16([ f)] es([ f)] es d c8 c f f,
-    b8[ d'16 c] b[ c b a] g[ a g f] es[ c d es]
-    f8[ a16 g] fis[ d e fis] g8 g16([ f?] es[ f es d])
+    g8 g16([ f)] es([ f)] es d c8 c f4
+    b,8 d'16[ c] b[ c b a] g[ a g f] e[ c d \hA e]
+    f8[ a16 g] fis[ d e \hA fis] g8 g16([ f] es[ f es d])
     c4 f d8 b g'8. g16 %255
-    es8 c as' as16 as f8 d b'4
-    g es( c d)
-    g,4^\critnote r r2
+    es8 c as' as16 as f8 d b'4(
+    g) es c( d)
+    g,4 r r2
     r8 a'16[( g] f[ g a f] b8) b, r4
     r8 g'16[( f] es[ f g es] a8) a, r c~ %260
-    c b es4 d8[ d'16 c] b[ c d b]
+    c b es4 d8 d'16[( c] b[ c d b])
     f4 r r g
     es8 c c'8. c16 a4 r8 f
     f16([ g)] f es d4 d r8 b'~
     b16[ c] b([ as)] g8[ a16 h] c[ d c b] a[ b a g] %265
-    f2 f,
-    r r4 f'
+    f2 f
+    r r4 f
     d8 b b'8. b16 g8 g16([ f)] es([ f)] es d
-    c8([ d16 es]) f[( es d c)] b8( b'4) c16([ d)]
-    es4 es, r8 a4( b16[ c] %270
-    d4) d, r8 g4 c8~
+    c8([ d16 es] f[ es d c)] b8 b'4 c16([ d)]
+    es4 es, r8 a4 b16[( c]) %270
+    d4 d, r8 g4 c8~
     c a4 d b es8~
     es c4 a f g16[ a]
     b8 b, f'4 b, r
     r8 f' f f b8. b,16 b4 %275
     r8 f' f f b8. b,16 b4
     r8 es'16([ d)] c([ b)] a g f8 b f4
-    b, r r8 f' a c
+    b, r r8 f'\p a c
     b8. b,16 b4 r8 f' a c
-    b8. b,16 b4 r8 es'16([ d)] c([ d)] c b %280
+    b8. b,16 b4 r8\ff es'16([ d)] c([ d)] c b %280
     a([ b)] a([ g)] f([ g)] f([ es)] d8 b f'4
     b4 f b, r\fermata \bar "|." %282 finis
   }
@@ -647,8 +647,8 @@ QuoniamBassoLyrics = \lyricmode {
   so -- lus al -- tis -- si -- mus,
   Je -- su Chri -- ste,
 
-  tu so -- lus \xE san -- ctus, \x %225
-  tu so -- lus Do -- mi -- nus.
+  tu so -- lus Do -- mi -- nus, %225
+  so -- lus al -- tis -- si -- mus.
 
   Cum San -- cto Spi -- ri -- tu in
   glo -- ri -- a De -- i Pa -- tris,
@@ -661,8 +661,8 @@ QuoniamBassoLyrics = \lyricmode {
   a -- men, a --
   _ _ _ _
   men, a -- _
-  _ _ _ _
-  _ men, %240
+  _ _ men, a --
+  men, %240
   cum San -- cto Spi -- ri -- tu in
   glo -- ri -- a De -- i Pa -- tris, a --
   men, a -- _
@@ -674,8 +674,8 @@ QuoniamBassoLyrics = \lyricmode {
   men, a --
   men, %250
   cum San -- cto Spi -- ri --
-  tu in glo -- ri -- a De -- i Pa -- tris,
-  a -- _ _ _
+  tu in glo -- ri -- a De -- i Pa --
+  tris, a -- _ _ _
   _ _ men, a --
   men, cum San -- cto Spi -- ri -- %255
   tu in glo -- ri -- a De -- i Pa --
@@ -683,7 +683,7 @@ QuoniamBassoLyrics = \lyricmode {
   men,
   a -- men,
   a -- men, a -- %260
-  men, a -- _ _
+  men, a -- men, a --
   men, cum
   San -- cto Spi -- ri -- tu in
   glo -- ri -- a De -- i Pa --
@@ -691,9 +691,9 @@ QuoniamBassoLyrics = \lyricmode {
   _ men,
   cum
   San -- cto Spi -- ri -- tu in glo -- ri -- a
-  De -- i __ Pa -- tris,
-  a -- men, a -- %270
-  men, a -- _
+  De -- i Pa -- tris,
+  a -- men, a -- men, %270
+  a -- men, a -- _
   _ _ _ _
   _ _ _ _
   _ men, a -- men,
@@ -711,7 +711,7 @@ CredoBassoNotes = {
   \relative c {
     \clef bass
     \key b \major \time 2/2 \autoBeamOff \tempoCredo
-    \mvTr b'4\f^\tutti b8 b b4 b
+    \mvTr b'4\fE^\tuttiE b8 b b4 b
     b2 b,
     f'4 f8 f f4 f
     c'2 a4 f
@@ -757,12 +757,12 @@ CredoBassoNotes = {
     h d g f
     es c' h g
     c2 c,
-    a' b %50
+    a' b! %50
     fis4. fis8 g2
     c,2 cis
     d4 d'( cis) c
     b a g f!
-    es d c c' %55
+    es! d c c' %55
     d2. d4
     g,2 r
     R1*2
@@ -772,7 +772,7 @@ CredoBassoNotes = {
     g2 r
     b, b4 b
     es2 c4 es %65
-    f2.( a4)
+    f1
     b2 r4 a
     g2 f4 f
     es2 d4 d
@@ -785,7 +785,7 @@ CredoBassoNotes = {
     g( f) es d
     c2 c4 c
     f( es) d c
-    b2 b4 as'
+    b!2 b4 as'
     g2 f4 f %80
     es2 d4 es
     f1
@@ -794,7 +794,7 @@ CredoBassoNotes = {
     b4 b a2 %85
     b4 b f2
     b, r
-    R1*2 \bar "|" %89 finis
+    R1*2 \bar "||" %89 finis
   }
 }
 
@@ -825,9 +825,9 @@ CredoBassoLyrics = \lyricmode {
   ge -- ni -- %25
   tum,
   et ex
-  Pa -- tre,
-  \xE ex Pa -- tre
-  na -- tum \x %30
+  Pa -- tre
+  na -- tum, ex
+  Pa -- tre %30
   an -- te
   o -- mni -- a
   sae -- cu --
@@ -849,39 +849,39 @@ CredoBassoLyrics = \lyricmode {
   o -- mni -- a
   fa -- cta
   sunt, per quem
-  o -- _ _ _
-  _ _ mni -- a %55
-  fa -- cta
-  sunt.
+  fa -- _ _ _
+  _ _ cta sunt %55
+  o -- mni --
+  a.
 
   Qui, qui %60
   pro -- pter nos
   ho -- mi --
-  nes,
-  qui pro -- pter
+  nes
+  et pro -- pter
   no -- stram sa -- %65
   lu --
   tem de --
   scen -- dit, de --
-  scen -- dit, \xE de --
-  scen -- dit de  %70
-  coe -- lis, \x pro -- pter
+  scen -- dit, de
+  coe -- lis de --  %70
+  scen -- dit, pro -- pter
   nos, pro -- pter
-  nos, de
+  nos de
   coe --
-  lis, \xE et \x %75
+  lis et %75
   no -- stram sa --
-  lu -- tem, \xE et \x
+  lu -- tem, et
   no -- stram sa --
-  lu -- tem de --
-  scen -- dit, de -- %80
-  scen -- dit de
-  coe --
-  lis, de -- scen --
-  dit de coe --
-  lis, de -- scen -- %85
-  dit de coe --
-  lis. %87 finis
+  lu -- tem de
+  coe -- lis, de %80
+  coe -- lis de --
+  scen --
+  dit, de coe --
+  lis de -- scen --
+  dit, de coe -- %85
+  lis de -- scen --
+  dit. %87 finis
 }
 
 EtIncarnatusBassoNotes = {
@@ -890,10 +890,10 @@ EtIncarnatusBassoNotes = {
     \key ges \major \time 3/4 \autoBeamOff \tempoEtIncarnatus
       \set Score.currentBarNumber = #90
     R2. %90
-    \mvTr ges'4\pE^\solo as b
+    ges'4^\solo as b
     ces4. as8 f4
     as b ces
-    des4. ges,8 ges4
+    des4. b8 ges4
     ges ges ges8 ges %95
     ges4 ges f16([ ges)] as([ b)]
     ces4 b8 ges f16([ ges)] as([ b)]
@@ -906,13 +906,13 @@ EtIncarnatusBassoNotes = {
     f4 des des8 des
     d8. d16 es8 b'([ ges)] es %105
     c8. c16 des4 b
-    ges8 ges' as4 as,
-    as( des8) ces'!([ as)] f
-    d4 es8 b' ges es
-    c8. c16 des4 b\fermata %110
-    \key c \major h4. h8 h h
+    ges8 ges' as4\p as,
+    as( des8) ces'!([ as)] f\cresc
+    d4 es8 b'([ ges]) es
+    c8. c16 des4 b\f\fermata %110
+    \key c \major h!4. h8 h h
     e4 r r
-    \key b \major e'4.^\tutti e8 e e
+    \key b \major \mvTr e'4.\f^\tutti e8 e e
     e8. g,16 g4 r8 g
     b4 d, r8 d %115
     es!4. g8 b des
@@ -922,8 +922,8 @@ EtIncarnatusBassoNotes = {
     es4 es, r %120
     des ces r8 as
     es'4 des b'8 b
-    ges2 ges4
-    f2 ges4
+    ges2\sf ges4
+    f2\p ges4
     f2 ges4 %125
     f2 f,4
     f r r
@@ -939,19 +939,19 @@ EtIncarnatusBassoLyrics = \lyricmode {
   de Spi -- ri -- tu %95
   San -- cto ex Ma --
   ri -- a, Ma -- ri -- a
-  Vir -- gi -- ne, et ho -- mo,
-  ho -- mo, ho -- mo fa -- ctus
+  Vir -- gi -- ne, et ho -- mo
+  fa -- ctus, ho -- mo fa -- ctus
   est, %100
-  \xE Ma -- ri -- a
-  Vir -- gi -- ne, \x
+  Ma -- ri -- a
+  Vir -- gi -- ne,
   de Spi -- ri -- tu
   San -- cto, in -- car --
   na -- tus est, in -- car -- %105
   na -- tus est, et
   ho -- mo fa -- ctus
   est, __ ex __ Ma --
-  ri -- a, Ma -- ri -- a
-  Vir -- gi -- ne, et %110
+  ri -- a in -- car --
+  na -- tus est et %110
   ho -- mo fa -- ctus
   est.
   Cru -- ci -- fi -- xus
@@ -963,8 +963,8 @@ EtIncarnatusBassoLyrics = \lyricmode {
   pro no -- bis cru -- ci --
   fi -- xus, %120
   pas -- sus pro
-  no -- bis \xE cru -- ci --
-  fi -- xus, \x
+  no -- bis cru -- ci --
+  fi -- xus,
   pas -- sus
   et se -- %125
   pul -- tus

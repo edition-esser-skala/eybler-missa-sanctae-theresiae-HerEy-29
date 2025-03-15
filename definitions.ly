@@ -8,11 +8,11 @@
 
 hA = \once \override Accidental.stencil = ##f
 mvTl = \once \override TextScript.X-offset = #-2
+accomp = \markup \remark "accomp."
+fivehatflat = \markup { \concat { \combine \figured-bass 5 \path #.15 #'((rmoveto 0 1.2) (rlineto .5 .5) (rlineto .5 -.5)) \raise #.3 \fontsize #-5 \flat } }
 
 vlne =    \markup \remark  "vlne"
 vlneE =   \markup \remarkE "vlne"
-vlcorg =  \markup \remark  "vlc, org"
-vlcorgE = \markup \remarkE "vlc, org"
 stac =    \markup \remark  "staccato"
 stacE =   \markup \remarkE "staccato"
 

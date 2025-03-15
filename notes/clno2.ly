@@ -11,41 +11,41 @@ GloriaClarinoII = {
     g4. g16 g g8 g g g %5
     c4. c16 c c8 c c c
     g8. g16 c8. c16 g8. g16 c8. c16
-    g8 g,16 g g8 g g4 r
+    g8 g,16 g g8 g g-! r r4
     R1*14 %22
-    e'4\fE e8. e16  g4 g
+    e'4\f e8. e16  g4 g
     c,2\sf c\sf
     r g' %25
     e4 r r2
-    r4 g c c
+    r4 g\f c c
     g r r2
     r4 g c c
     g r r2 %30
     R1*3
-    r4 g2\fE c,4
+    r4 g2\f c,4
     R1*2 %36
-    r4 c r c
+    r4 c\f r c
     r c8. c16 c4 c
-    c2 c
+    c2\sf c\sf
     c8 c16 c c8 c c c c c %40
-    c'2 g
+    c'2\sf g
     c,4 r r2
     R1*25 %67
-    r4 c2\fE c4
+    r4 c2\f c4
     g' r r2
     R1 %70
     c,4 r r2
     R1*34 %105
-    r4 g'2\fE c,4
+    r4 g'2\f c,4
     R1*2
     r4-\critnote c r c
     e1\fermata %110
     R
-    g2 c4 g
+    g2\f c4 g
     c, c' c g
     c, r r2
     R1*9 %123
-    g'2\fE c4 r
+    g'2\ffE c4 r
     r c, c' g %125
     r c, r c
     r c8. c16 c4 c
@@ -69,27 +69,27 @@ QuoniamClarinoII = {
     \partial 8 r8 r2 r8 g'\f c, g'
     c4 r g r
     R1*2
-    g4\fE g8 g c4 r
+    g4\f g8 g c4 r
     r8 d c g e4 r %190
     R1*2
-    g4\fE g8 g c4 r
+    g4\f g8 g c4 r
     r8 d c g e4 r
     R1*6 %200
     r2 g4\fE r
     r8 d' d d g,4 r
     r8 d' d d g,4 r
-    e8 e16. e32 g8 g16. g32 c4 r8_\critnote c
-    g4 r g r %205
+    e8 e16. e32 g8 g16. g32 c4 r8 c
+    g r r4 g r %205
     R1*4
-    r8 g\fE c c g4 r %210
+    r8 g\f c c g4 r %210
     R1
-    r8 g\fE c c g4 r
+    r8 g\f c c g4 r
     R1*5 %217
     r2 r8 e\f e e
     g g g4 c8 e, e e
     g g g4 c8 c,16 c c8 c %220
     c4 r r r8 g'
-    c_\critnote r r g e4 r
+    c r r g e4 r
     R1*5 %227
     \tempoCumSancto R1*3 %230
     g4 e8 c c'4 r
@@ -102,7 +102,7 @@ QuoniamClarinoII = {
     e r r2
     R1*2 %240
     r2 r4 g,
-    c_\critnote r r2
+    c r r2
     r4 g8. g16 c4 r
     R1
     c8 c16 c c8 c c4 r %245
@@ -114,9 +114,9 @@ QuoniamClarinoII = {
     r4 g'8. g16 c8. g16 e8 g
     c,4 r r g'8. g16
     e8 c r4 r d'
-    g, e e8 r r4
+    g, e~ e8 r r4
     r g8. g16 c4 e, %255
-    d' b b c
+    d' b~ b c~
     c r r2
     R1
     g4 g8 g c4 r
@@ -138,9 +138,9 @@ QuoniamClarinoII = {
     r8 g g g c4 r %275
     r8 g g g c4 r
     r r8 g4 c g8
-    e4 r r2
+    e8 r r4 r2
     R1*2 %280
-    g8 g16 g g8 g c c4 g8
+    g8\ff g16 g g8 g c c4 g8
     e4 g c, r\fermata \bar "|." %282 finis
   }
 }
@@ -159,10 +159,10 @@ CredoClarinoII = {
     R1
     g'4 g8 g g4 g
     g1 %10
-    d'4 d8 d d4 d
+    d'2 d4 d
     g,2 r
     g,4 g8 g g4 g
-    g_\critnote r r2
+    g2 r
     R1 %15
     g2 r
     R1*2
@@ -173,7 +173,7 @@ CredoClarinoII = {
     g2 r
     R1*3 %30
     e'2 e4 e
-    e_\critnote r r2
+    e r r2
     R1
     e4 r r2
     R1*3 %37
@@ -187,7 +187,7 @@ CredoClarinoII = {
     g r %45
     R1*18 %63
     c,2 c4 c
-    c2_\critnote r %65
+    c2 r %65
     g'1
     c2 g
     c, r
@@ -206,8 +206,8 @@ CredoClarinoII = {
     c c8 c g4 g
     c r r g %85
     c c8 c g4 g
-    e_\critnote r r2
-    R1*2 \bar "|" %89 finis
+    e r r2
+    R1*2 \bar "||" %89 finis
   }
 }
 
@@ -217,9 +217,9 @@ EtIncarnatusClarinoII = {
     \key c \major \time 3/4 \tempoEtIncarnatus
       \set Score.currentBarNumber = #90
     R2.*20 %109
-    R2.\fermata %110
+    r4 r r\fermata %110
     R2.*2
-    c4\ppE r r
+    c4\f r r
     c r r
     c r r %115
     c r r

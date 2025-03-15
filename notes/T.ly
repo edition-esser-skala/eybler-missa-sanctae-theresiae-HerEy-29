@@ -249,8 +249,8 @@ GloriaTenoreNotes = {
   \relative c' {
     \clef "treble_8"
     \key b \major \time 4/4 \autoBeamOff \tempoGloria
-    \mvTr b4\f^\tutti b8 b c4 c
-    es2 d
+    \mvTr b4\f^\tuttiE b8 b c4 c
+    es2\sf d\sf
     g,( a)
     b r
     a4. c8 a4 r %5
@@ -258,8 +258,8 @@ GloriaTenoreNotes = {
     es d c b
     f' f, r2
     R1
-    des'2\pE r %10
-    des4 b as ges
+    des'2\p r %10
+    des4 b as as
     f as2 as4
     as2 as
     r4 as2 as4
@@ -270,97 +270,97 @@ GloriaTenoreNotes = {
     c'2~ c8[ es] des c
     b4 r b b %20
     des2. b4
-    a4^\critnote r r2
-    r4 b\fE c c
+    a!4 r r2
+    r4 b\f c c
     es2 d4 d
     g,2 a %25
-    b4^\critnote r b b
+    b4 r b b
     c a r2
     r4 a b b
     c a r2
-    r4 a2\pE b4 %30
+    r4 a2\p b4 %30
     es4. es8 d4 r
     r a2 b4
     es2 d4 r
-    r f2\fE b,4
+    r f2\f b,4
     es2 es4 c %35
     d b g' f
     f r es r
     b8([ c)] d([ es)] f([ g)] f([ es)]
-    d2 f
+    d2\sf f
     es4 es d cis %40
-    d2 c
-    b4^\critnote r r2
+    d2\sf c
+    b4 r r2
     R1*3 %45
-    b4.\pE b8 b4 r
+    b4.\p b8 b4 r
     b4. b8 b4 r
     d2 b4 b
     b b r2
     as as %50
     b d
-    es(\fE fes
-    es) ces4 es
+    es\cresc fes
+    es\f ces4 es
     ges2.( es4)
     d! r r2 %55
     R1*7 %62
-    r4 \once \tieDashed b~\pE b8[ c] d([ es)]
+    r4 \mvTr b~\p^\tutti b8[ c] d([ es)]
     f4.( d8) b4 r
-    r \once \tieDashed b~ b8[ c] d([ es)] %65
+    r b~ b8[ c] d([ es)] %65
     f4. d8 b4 r
     r b~ b8[ c] d([ es)]
-    f4.( d8) b4 b\fE
+    f4.( d8) b4 b\f
     c2 c4 d
-    es es c b^\critnote %70
-    b4^\critnote r r2
+    es es c b %70
+    b4 r r2
     R1*3
-    \mvTr \once \tieDashed b2~\pE^\solo  b8[ g'] f es %75
-    es2 d4 r
+    \mvTr b2~\pE^\solo  b8[ g'] f es %75
+    \appoggiatura f4 es2 d4 r
     g8([ f)] es([ d)] c([ b)] c([ as)]
     b4. as8 g4 r
     c2 h
     f' es4 r %80
     as2( g8[ f)] es([ d)]
     c4 h r2
-    r4 g^\tutti g g
+    r4 \mvTr g\p^\tutti g g
     h2 c4 r
     r g g g %85
     h4. h8 c4 r
-    r f2\fE es4
+    r f2\f es4
     d2 d4 h
-    c4. c8 c4 h
-    c^\critnote r r2 %90
+    c c c h
+    c r r2 %90
     R1*11 %101
-    r4 a\pE a b
+    r4 \mvTr a\p^\tutti a b
     es2 d4 r
     r a a b
     es4. es8 d4 r %105
-    r f2\fE b,4
+    r f2\f b,4
     es2 es4 c
     d b g' f
     f r d r
     f1\fermata %110
-    d2 es4 es
+    d2\f es4 es
     c2 d4 d
     b es d c
     d2 r
-    as\pE as4 as %115
+    as\pp as4 as %115
     g2 g
     b b4 b
     b4. g8 g4 r
-    c2 c4 c
+    c2\cresc c4 c
     b d a c %120
     b d c es
-    d2\fE c
-    d c4 c
+    d2\f c
+    d\ff c4 c
     c2 b4 d
     b es d c %125
     d r b r
     d2 r4 f
-    es g a,8([ c)] es4
+    es g a, es'
     d r b r
     es2 r4 c %130
     d g es f
-    b,2 r
+    b, r r2
     R1*4 %136
     R1\fermata \bar "||" %137 finis
   }
@@ -392,8 +392,8 @@ GloriaTenoreLyrics = \lyricmode {
   glo -- ri -- fi --
   ca -- mus, lau --
   da -- mus %25
-  te, ad -- o --
-  ra -- mus,
+  te, te lau --
+  da -- mus,
   glo -- ri -- fi --
   ca -- mus,
   be -- ne -- %30
@@ -416,8 +416,8 @@ GloriaTenoreLyrics = \lyricmode {
   ti -- bi
   pro -- pter %50
   ma -- gnam
-  glo --
-  ri -- am
+  glo -- _
+  _ ri -- am
   tu --
   am. %55
 
@@ -426,13 +426,13 @@ GloriaTenoreLyrics = \lyricmode {
   be -- ne -- %65
   di -- ci -- mus,
   te __ lau --
-  da -- mus, \xE lau --
+  da -- mus, lau --
   da -- mus, glo --
-  ri -- \x fi -- ca -- mus %70
+  ri -- fi -- ca -- mus %70
   te.
 
   Do -- mi -- ne %75
-  \xE Fi -- li, \x
+  Fi -- li,
   Fi -- li u -- ni --
   ge -- ni -- te,
   Je -- su,
@@ -481,16 +481,16 @@ GloriaTenoreLyrics = \lyricmode {
   te. %132 finis
 }
 
-QuiTollisTenoreNotes = {
+QuiTollisTenoreSoloNotes = {
   \relative c' {
     \clef "treble_8"
     \key g \minor \time 3/4 \autoBeamOff \tempoQuiTollis
       \set Score.currentBarNumber = #138
     \partial 8 r8 R2.
-    r4 r r8 \mvTr es\pE^\solo
+    r4 r r8 es
     es8.([ b16)] g8 r r es' %140
-    es8.([ c16)] as4 r
-    fis g8([ a)] b([ c)]
+    es8.([ c16)] as4 r8 g
+    fis4 g8 a b c
     d4 d, r
     d'4. c16([ b)] a([ g)] fis([ g)]
     g8.([ es'16)] es4 r %145
@@ -502,43 +502,35 @@ QuiTollisTenoreNotes = {
     R2.*2
     r4 r r8 f
     f'8.([ d16)] b4 r8 b
-    f'8.([ d16)] h4 r8 h %155
+    f'8.([ d16)] h4 r8 \hA h %155
     c([ d)] es e f fis
     g4 g, r
-    \mvTr c\pE^\tutti c8 c c c
-    b!2 as4
-    des2 c4 %160
-    b as r
-    as4. as8 b ces
-    b4( es,) as
-    as2( g4)
-    as^\critnote r r %165
-    R2.*2
-    r4 r r8 \mvTr es\pE^\solo
+    R2.*10 %167
+    r4 r r8 es
     es'8.([ c16)] as4 r8 es
     es'8.([ c16)] a!4 r8 a %170
     b4.( c8) des es
     f4 f, r
-    b4.^\tutti a!8 b c
+    b4. a!8 b c
     c8.([ des16)] des4 r
     c4. h8 c d %175
     d8.([ es16)] es4 r
     d4. cis8 d e
     f4 fis g~
-    g16[( es)] c([ a)] g4.( \grace b16 a8)
+    g16[( es!)] c([ a)] g4.( \grace b16 a8)
     g4 r r %180
-    r8 d'4 es8 f! fis
-    g4( g,) fis
-    g2.
-    g4 r r\fermata \bar "||" %184 finis
+    r8 d'4\sf es8 f fis
+    g4( g,) c
+    h2.
+    h4 r r\fermata \bar "||" %184 finis
   }
 }
 
-QuiTollisTenoreLyrics = \lyricmode {
+QuiTollisTenoreSoloLyrics = \lyricmode {
   Qui %139
   tol -- lis, qui %140
-  tol -- lis
-  pec -- ca -- ta
+  tol -- lis pec --
+  ca -- ta, pec -- ca -- ta
   mun -- di:
   Mi -- se -- re -- re
   no -- bis, %145
@@ -553,14 +545,6 @@ QuiTollisTenoreLyrics = \lyricmode {
   tol -- lis pec -- %155
   ca -- ta, pec -- ca -- ta
   mun -- di:
-  Su -- sci -- pe de -- pre --
-  ca -- ti --
-  o -- nem %160
-  no -- stram,
-  de -- pre -- ca -- ti --
-  o -- nem
-  no --
-  stram. %165
 
   Qui %168
   se -- des, qui
@@ -574,8 +558,74 @@ QuiTollisTenoreLyrics = \lyricmode {
   mi -- se -- re -- re,
   mi -- se -- re --
   re no --
-  bis, %180
+  bis %180
   no -- bis mi -- se --
+  re -- re,
+  no --
+  bis. %184 finis
+}
+
+QuiTollisTenoreTuttiNotes = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \minor \time 3/4 \autoBeamOff \tempoQuiTollis
+      \set Score.currentBarNumber = #138
+    \partial 8 r8 R2.*7 %144
+    es4.\pp d8 c b %145
+    a8.([ b16)] a4 r
+    f'4.\cresc es8 d c
+    h8.([ c16)] \hA h4\! r
+    r f8\pp f f8.([ es16)]
+    d4 r r %150
+    R2.*7 %157
+    c'4\p c8 c c c
+    b!2 as4\cresc
+    des2 c4 %160
+    b as\! r
+    as4.\pp as8 b ces
+    b4( es,) as
+    \after 4. \> as2(\< g4)
+    as\! r r %165
+    R2.*8 %173
+    f4.\pp e8 f g
+    g8.([ as16)] as4 r %175
+    g4. fis8 g a
+    a8.([ b16)] b4 r
+    r es!8.([ d16)] d4
+    r d,8 d d4
+    d8 f'!4\sf es8 d c %180
+    h4. c8 d es
+    f4( es) c
+    h2.
+    h4 r r\fermata \bar "||" %184 finis
+  }
+}
+
+QuiTollisTenoreTuttiLyrics = \lyricmode {
+  Mi -- se -- re -- re %145
+  no -- bis,
+  mi -- se -- re -- re
+  no -- bis,
+  mi -- se -- re --
+  re. %150
+
+  Su -- sci -- pe de -- pre -- %158
+  ca -- ti --
+  o -- nem %160
+  no -- stram,
+  de -- pre -- ca -- ti --
+  o -- nem
+  no --
+  stram. %165
+
+  Mi -- se -- re -- re %174
+  no -- bis, %175
+  mi -- se -- re -- re
+  no -- bis,
+  no -- bis
+  mi -- se -- re --
+  re, no -- bis mi -- se -- %180
+  re -- re, mi -- se --
   re -- re
   no --
   bis. %184 finis
@@ -590,30 +640,30 @@ QuoniamTenoreNotes = {
     \mvTr f4\f^\tutti f8 f f([ d)] b d
     es es d([ c)] d4 r %190
     R1*2
-    f4 f8 f f8. d16 b8 d
-    es es d c d4 r
+    \mvTr f4\f^\tutti f8 f f8. d16 b8 d
+    es es d8. c16 d4 r
     R1*6 %200
-    r2 r8 c a f
+    r2 r8 \mvTr c\f^\tutti a f
     e8.([ g16)] b4 r8 c a f
     e8. g16 b4 a r8 c
     b4 es!8 es d8. b16 b4
     c8 d c([ b)] a4 r %205
     R1*4
-    r8 f b d c4 f, %210
+    r8 \mvTr f\f^\tutti b d c4 f, %210
     R1
-    r8 f b d c8. a16 f4
+    r8 \mvTr f\f^\tuttiE b d c8. a16 f4
     R1*6 %218
-    es'4 d16([ c)] b([ a)] b8.([ f16)] f4
+    \mvTr es'4\f^\tutti d16([ c)] b([ a)] b8.([ f16)] f4
     es' d16([ c)] b([ a)] b8. d16 f8 d %220
     es4 d8 d c4 c8 f
     f cis d([ a)] b4 r
     R1
-    r2 r8 c c c
+    r2 r8 c\p c b
     gis8.([ a16)] a4 r8 f a c %225
     a8. b16 b4 r8 d c b
     es4 d8 d a b c d16([ e)]
     \tempoCumSancto f8 f, r4 r2
-    r b4 a8 f
+    r b4\f a8 f
     f'8. f16 d8 d16([ c)] b([ c)] b a g8 c %230
     a f r4 r8 g'16[ f] es[ f es d]
     c[ d c b] a[ f g a] b4 r8 d~
@@ -623,17 +673,17 @@ QuoniamTenoreNotes = {
     d4) d, d' b8 g
     g'8. g16 es8 es16([ d)] c([ d)] c b a8 d
     b g d'4 b r8 d~
-    d[ cis16 d] e4 a,8 d4 b8
-    g es'16[ d] c[ d c b!] a[ b a g] fis[ d e fis] %240
+    d[ cis16 d] e4 a,8 d4( b8)
+    g es'16[ d] c[ d c b!] a[ b a g] fis[ d e \hA fis] %240
     g4 r r2
     r r8 c4 d16[ e]
     f8[ as16 g] f[ es d c] b8 b4 c16[ d]
     es8[ g16 f] es[ d c b] as8 as4 b16[ c]
     d8[ f16 es] d[ c b as] g8 b r4 %245
-    r8 c16[ b] as[ b as g] f8[ g16 as] b[ as g f]
+    r8 c16[ b] as[ b \hA as g] f8[ g16 \hA as] b[ \hA as g f]
     es8[ es'16 d] c[ d c b] a[ b a g] f[ g a f]
     b8[ d16 c] b[ c b a] g8 g' r4
-    r8 c,16([ b] a[ b a g] f8) f' r4
+    r8 c,16(^[ b] a[ b a g] f8) f' r4
     r8 b,16([ a] g[ a g f] es8) es' r4 %250
     r2 r4 d
     b8 g g'8. g16 es8 es16([ d)] c([ es)] d c
@@ -642,10 +692,10 @@ QuoniamTenoreNotes = {
     R1 %255
     r2 r4 b~
     b g8 es es'8. es16 d8 d16([ c)]
-    b([ c)] b a g([ a)] b([ g)] c8([ es16 d)] c([ b a g])
+    b([ c)] b a g([ a)] b([ g)] c8[ es16 d] c[ b a g]
     f8 f' r4 r8 d16([ c] b[ a g f]
     es8) es' r4 r8 c16[ b] a[ b a g] %260
-    fis8[ g]~ g[ c16 g] f4 r
+    fis8[ g]~ g[ c16 a] f4 r
     a f8 d d'8. d16 b4
     r r8 c c16([ d)] c b a4
     a r8 f'~ f16[ g] f([ es)] d4
@@ -662,9 +712,9 @@ QuoniamTenoreNotes = {
     r8 a a a b8. d16 d4 %275
     r8 a a a b8. d16 d4
     r8 g16([ f)] es([ d)] c b a8 b b([ a)]
-    b4 r r8 a c es
+    b4 r r8 a\p c es
     d8. b16 d4 r8 a c es
-    d8. b16 d4 r8 g16([ f)] es([ f)] es d %280
+    d8. b16 d4 r8\ff g16([ f)] es([ f)] es d %280
     c([ d)] c([ b)] a([ b)] a([ g)] f8 b b([ a)]
     b4 c d r\fermata \bar "|." %282 finis
   }
@@ -707,7 +757,7 @@ QuoniamTenoreLyrics = \lyricmode {
   men, cum San -- cto
   Spi -- ri -- tu in glo -- ri -- a De -- i
   Pa -- tris, a -- men, a --
-  _ _ _ _
+  _ men, a --
   men, a -- _ _ _ %240
   men,
   a -- _
@@ -726,8 +776,8 @@ QuoniamTenoreLyrics = \lyricmode {
   %255
   cum __
   San -- cto Spi -- ri -- tu in
-  glo -- ri -- a De -- i Pa -- tris,
-  a -- men, a --
+  glo -- ri -- a De -- i Pa -- _
+  _ tris, a --
   men, a -- _ %260
   _ men,
   cum San -- cto Spi -- ri -- tu
@@ -769,7 +819,7 @@ CredoTenoreNotes = {
     c4. c8 c2 %10
     c4 c c c
     c4. b8 a2
-    b^\critnote es4 es
+    b^\critnote es!4 es
     d2 b
     a( b) %15
     a r
@@ -777,7 +827,7 @@ CredoTenoreNotes = {
     a4 c b b
     a4. c8 a2 %20
     b4( d2) c8([ b)]
-    a4.( g8) f2^\critnote
+    a4.( g8) f2
     f4( b) d b
     g c c a
     d2( c4) c %25
@@ -800,7 +850,7 @@ CredoTenoreNotes = {
     c c b2
     a r %45
     a4. a8 h4 c
-    d h g h
+    d h g \hA h
     c c g h
     d2 c
     c d %50
@@ -828,7 +878,7 @@ CredoTenoreNotes = {
     c2 r4 f
     f1
     f,2 r4 d' %75
-    h( d) c h
+    h( d) c \hA h
     h( c) c c
     a( c) b a
     a( b) b d
@@ -840,7 +890,7 @@ CredoTenoreNotes = {
     b b c2 %85
     b4 b b( a)
     b2 r
-    R1*2 \bar "|" %89 finis
+    R1*2 \bar "||" %89 finis
   }
 }
 
@@ -871,9 +921,9 @@ CredoTenoreLyrics = \lyricmode {
   ge -- ni -- %25
   tum,
   et ex
-  Pa -- tre,
-  \xE ex Pa -- tre
-  na -- tum \x %30
+  Pa -- tre
+  na -- tum, ex
+  Pa -- tre %30
   an -- te
   o -- mni -- a
   sae -- cu --
@@ -895,39 +945,39 @@ CredoTenoreLyrics = \lyricmode {
   o -- mni -- a
   fa -- cta
   sunt,
-  per __ quem
-  o -- mni -- a %55
-  fa -- cta
-  sunt.
+  per quem
+  fa -- cta sunt %55
+  o -- mni --
+  a.
 
   Qui, qui %60
   pro -- pter nos
   ho -- mi --
-  nes,
-  qui pro -- pter
+  nes
+  et pro -- pter
   no -- stram sa -- %65
   lu --
   tem de --
   scen -- dit, de --
-  scen -- dit, \xE de --
-  scen -- dit de  %70
-  coe -- lis, \x pro -- pter
+  scen -- dit, de
+  coe -- lis de --  %70
+  scen -- dit, pro -- pter
   nos, pro -- pter
-  nos, de
+  nos de
   coe --
-  lis, et %75
+  lis et %75
   no -- stram sa --
   lu -- tem, et
   no -- stram sa --
-  lu -- tem de --
-  scen -- dit, de -- %80
-  scen -- dit de
-  coe --
-  lis, de -- scen --
-  dit de coe --
-  lis, de -- scen -- %85
-  dit de coe --
-  lis. %87 finis
+  lu -- tem de
+  coe -- lis, de %80
+  coe -- lis de --
+  scen --
+  dit, de coe --
+  lis de -- scen --
+  dit, de coe -- %85
+  lis de -- scen --
+  dit. %87 finis
 }
 
 EtIncarnatusTenoreNotes = {
@@ -935,11 +985,11 @@ EtIncarnatusTenoreNotes = {
     \clef "treble_8"
     \key ges \major \time 3/4 \autoBeamOff \tempoEtIncarnatus
       \set Score.currentBarNumber = #90
-    \mvTr b4\pE^\solo b b %90
+    b4^\solo b b %90
     des4. ces8 b4
     as as as
-    as( b) ces
-    des2 r4
+    f( ges) as
+    b2 r4
     r8 b fes'([ des)] es ces %95
     b8.([ ges16)] b4 r
     r8 des4 des8 des des
@@ -952,27 +1002,27 @@ EtIncarnatusTenoreNotes = {
     as8.([ des16)] f4 as,8 as
     f b b ges([ b)] ges %105
     es as as4 b
-    b8 b as4. c8
-    c4( des8) as([ ces)] as
-    f([ b)] b ges b ges
-    es as as4 g\fermata %110
-    \key c \major gis8([ e gis)] h h8. a16
+    b8 b as4.\p c8
+    c4( des8) as([ ces)] as\cresc
+    f([ b)] b ges([ b)] ges
+    es as as4 g\f\fermata %110
+    \key c \major gis8([ e \hA gis)] h h8. a16
     gis4 r r
     \key b \major R2.
-    g'4.^\tutti g8 g g
+    \mvTr g'4.\f^\tutti g8 g g
     g8. b,16 b4 r8 b %115
     des4 g, r
     r8 c g' e c g
     as4 c f8 f
     f8.([ des16)] b4 r8 b
     b4. es8 ges es16 es %120
-    b4 ces r8 ces
+    b4 ces r8 \hA ces
     c4 des des8 des
-    b2 b4
-    a!2 b4
+    b2\sf b4
+    a!2\p b4
     a!2 b4 %125
     a!( b) e,
-    f^\critnote r r
+    f r r
     R2.\fermata \bar "||" %128 finis
   }
 }
@@ -997,8 +1047,8 @@ EtIncarnatusTenoreLyrics = \lyricmode {
   na -- tus est, et
   ho -- mo fa -- ctus
   est, __ ex __ Ma --
-  ri -- a, \xE Ma -- ri -- a
-  Vir -- gi -- ne, \x et %110
+  ri -- a in -- car -- %105
+  na -- tus est et %110
   ho -- mo fa -- ctus
   est.
 
@@ -1009,9 +1059,9 @@ EtIncarnatusTenoreLyrics = \lyricmode {
   la -- to, cru -- ci --
   fi -- xus pro
   no -- bis, e -- ti -- am %120
-  \xE pas -- sus \x pro
-  no -- bis \xE cru -- ci --
-  fi -- xus, \x
+  pas -- sus pro
+  no -- bis cru -- ci --
+  fi -- xus,
   pas -- sus
   et se -- %125
   pul -- tus

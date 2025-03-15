@@ -76,8 +76,8 @@ GloriaOboeII = {
   \relative c' {
     \clef treble
     \key b \major \time 4/4 \tempoGloria
-    b'2\f c
-    es d
+    b'4\f b8 b c4 c
+    es2\sf d\sf
     g, es
     d4 r d' b
     a1 %5
@@ -85,43 +85,43 @@ GloriaOboeII = {
     a4 b c b
     a f r2
     R1*14 %22
-    b2\fE c
-    es d
+    b4\f b8 b c4 c
+    es2\sf d
     g, es %25
     d4 r r2
-    r4 a' f b
+    r4 a'\f f b
     a r r2
     r4 a f b
     a r r2 %30
     R1*3
-    r4 a2\fE b4
+    r4 a2\f b4
     g2 c4 a %35
     b b c a
-    b b r b
+    b b\fz r b
     r d8. d16 d4 d
-    d2 f,
+    d2\sf f,\sf
     g4 es' d cis %40
-    d2 es,
+    d2\sf es,
     d4 r8 b' a4 g
     f r8 f es4 d
     c8 d es f g a b c
-    d4 f es c %45
-    b r r2
+    d4 f es es, %45
+    d r r2
     R1*2
-    r4 g(\pE as b)
+    r4 g(\p as b)
     as2 f %50
     b d
-    es\fE fes
-    es4 r r2
+    es\cresc fes
+    es4\! r r2
     R1
-    \once \slurDashed b4.( c8 d es f as,) %55
+    b4. c8 d( es f as,) %55
     g4 r r2
     R1*4 %60
-    r4 b4.(\pE c8 d es)
+    r4 b4.\p c8( d es)
     f2 es\trill
     d4 r r2
     R1*4 %67
-    r4 d2\fE es4
+    r4 d2\f es4
     c2 f4 d
     es es f d %70
     es r8 es d4 c
@@ -130,31 +130,31 @@ GloriaOboeII = {
     g4 g, as f
     g r r2 %75
     R1*11 %86
-    r4 h2 c4
+    r4 h2\f c4
     c2 h4 d
     es d c h
     c r8 c es4 c %90
-    as r8 as f'4 d
+    as r8 \hA as f'4 d
     h8 c d es f g a! h
     c4 f, es f,
     es r r2
     R1*11 %105
-    r4 a2\fE b4
+    r4 a2\f b4
     g2 c4 a
     b b c a
     b b r d
     f1\fermata %110
-    d2 c
-    c b~
-    b4 es d c
-    b r r2
+    d2\f c4 c
+    c2 b4 b
+    b es d es,
+    d r r2
     R1*5 %119
-    b2\pE a %120
-    b c
-    d\fE c
-    h c4 g
+    b'2\p a %120
+    b\cresc c
+    d\f c
+    h\ff c4 g
     a2 b4 f
-    g es' d c, %125
+    g es' d es, %125
     r d r b'
     r d8. d16 d4 b~
     b c a es
@@ -175,52 +175,53 @@ QuoniamOboeII = {
     \clef treble
     \key b \major \time 4/4 \tempoQuoniam
       \set Score.currentBarNumber = #185
-    \partial 8 g'8\fE c h c d es a, b c
+    \partial 8 g'8\f c h c d es a, b c
     f,4 r r8 a( b c)
-    d4 r r2
+    d r r4 r2
     R1
-    a2\fE b
+    a2\f b
     g8 c b a b4 r %190
     R1*2
-    a2\fE b
+    a2\f b
     g8 c b a b4 r
     R1*6 %200
-    r2 r8 c\fE c c
+    r2 r8 c\f c c
     g'2 f8 c c c
     g'2 f8 a, a a
     f4 a b2
     f8 g f e f4 f~ %205
-    f g2 e?8 g
-    a b c d e f \once \slurDashed g4~
-    g8 f4 e8 f4 r
+    f g2 e8 g
+    a b c d e f g4~
+    g8 f4 e8 f r r4
     R1
-    r8 a,\fE b d c8. a16 f4 %210
+    r8 a,\f b d c8. a16 f4 %210
     R1
-    r8 a\fE b d c16 a c a f4
-    R1*5 %217
-    r2 r8 f\fE f f
+    r8 a\f b d c16 a c a f4
+    R1
+    R1*4 %217
+    r2 r8 f\f f f
     a2 b8 f f f
-    a2 b4. d8 %220
-    es b h16 c d h c8 g4 a8
-    b e, f a b d c4\trill
+    a2 b8 b4 d8 %220
+    es b h16 c d \hA h c8 g4 a8
+    b e, f a b d c4
     b a g f
     a8 b c e, f4 r
     R1*3 %227
     \tempoCumSancto R1*4 %231
-    r2 b4 a8 f
+    r2 b4\fE a8 f
     f'8. f16 d8 d16 c b c b a g8 c
     a f r f'16 es d es d c b c b a
     g8 b r es16 d c d c b a b a g %235
-    f8 a r d16 c b c b a g a g f
-    c'8 es16 d c b a g a b a g fis d e fis
+    f8 a r d16 c b c b a g a b g
+    c8 es16 d c d c b a b a g fis d e \hA fis
     g8 b a4 g r
     r2 d'4 b8 g
     g'8. g16 es8 es16 d c d c b a8 d %240
     b g r es'16 d c8 a r f'16 es
     d8 b r g'16 f es f es d c d c b
     as8 f' r f16 es d es d c b c b as
-    g8 es' r es16 d c d c b as b as g
-    f8 g16 as b as g f g8 es r4 %245
+    g8 es' r es16 d c d c b as b \hA as g
+    f8 g16 as b \hA as g f g8 es r4 %245
     r2 f'4 d8 b
     g'8. g16 es8 es16 d c d c b a!8 f'
     d b r d16 c b c b a g8 g'
@@ -232,15 +233,15 @@ QuoniamOboeII = {
     a f d'4 g, r
     c a8 f d'8. d16 b8 g %255
     es' es16 es c8 as f'4 d8 g16 f
-    es f es d c d c b a b a g fis g a fis
+    es f es d c d c b a b a g fis g a \hA fis
     g8 d r4 c' es8 g
-    a,8. a16 f'4 b, d8 f
+    a,8. a16 f'4 b, d8 f16 f
     g,4 es' a, c8 es %260
     d g, c4. b16 c d8 b
     c4 a8 f f'8. f16 d4
     r8 es es16 f es d c4 c
-    r8 f f16 g f es d4 d
-    r8 g g16 as g f es f es d c d c b %265
+    r8 f~ f16 g f es d4 d
+    r8 g~ g16 as g f es f es d c d c b %265
     a!8 f r4 r2
     r c'4 a8 f
     f'8. f16 d8 d16 c b c b a g8 c
@@ -249,13 +250,13 @@ QuoniamOboeII = {
     f8 d' r d16 c b c b a g8 es'16 d
     c d c b a8 f'16 es d es d c b8 g'16 f
     es f es d c d c b a b a g f8 c'
-    b4. a8 b4 r
+    b b b a b4 r
     r8 a a a b4 r %275
     r8 a a a b4 r
     r8 g a16 b c b a8 b4 a8
-    b4 r r2
+    b r r4 r2
     R1
-    r2 r8 g'16\f f es f es d %280
+    r2 r8 g'16\ff f es f es d %280
     c d c b a b a g f8 b4 a8
     b4 a b r\fermata \bar "|." %282 finis
   }
@@ -269,34 +270,35 @@ CredoOboeII = {
     b1
     a2 a4 a
     a1
-    b %5
-    b2 r
-    R1*2
+    b2 b4 b %5
+    b2. r4
+    R1
+    R
     b2 b4 b
     c1 %10
     c4 g e g
     f4. g8 a2
     f es'!
     d b
-    a e %15
+    a g %15
     f r
     r r4 b
     a2 g
     f f4 f
-    a4. g8 f2 %20
+    a4. f8 f2 %20
     f4 d'2 c8 b
     a4. g8 f2
     f d
     e4 g f2~
     f e %25
-    c r
-    f1~
+    f r
+    f f4 f
     f2 e
     f a4 d
     d2 cis %30
     d2. c4
     b2 a4 g
-    f2 e?
+    f2 e
     d r
     r r4 e'~ %35
     e d2 cis4
@@ -319,8 +321,8 @@ CredoOboeII = {
     d4 d e fis
     g a b h
     c d es c %55
-    d1
-    g,2 r
+    d2. d4
+    g, r r2
     r r4 c
     b2 a
     g b %60
@@ -332,7 +334,7 @@ CredoOboeII = {
     es
     d4 r r c'
     b2 a
-    g f
+    g f~
     f c'4 b %70
     a1
     b
@@ -340,18 +342,18 @@ CredoOboeII = {
     b
     a2 r4 f %75
     d g2 h4~
-    h c2 g4
+    h c c g
     c, f2 a4~
-    a b2.
+    a b b b
     b2. b4 %80
     b2. c4
-    b2 a
+    b2 a\trill
     b4 r r f~
     f b2 a4
     b r r f~ %85
     f b2 a4
-    b2 r
-    R1*2 \bar "|" %89 finis
+    b r r2
+    R1*2 \bar "||" %89 finis
   }
 }
 
@@ -361,19 +363,19 @@ EtIncarnatusOboeII = {
     \key ges \major \time 3/4 \tempoEtIncarnatus
       \set Score.currentBarNumber = #90
     R2.*20 %109
-    R2.\fermata %110
-    \key c \major R2.*2
-    \key b \major b'2.\sfzE
-    b\sfzE
-    b\sfzE %115
-    des\sfzE
-    c\sfzE
-    c\sfzE
-    des\sfzE
-    b\sfzE %120
+    r4 r r\fermata %110
+    \key b \major R2.*2
+    b'2.\sfz
+    b\sfz
+    b\sfz %115
+    des\sfz
+    c\sfz
+    c\sfz
+    des\sfz
+    b\sfz %120
     g!4 as r8 ces
     a4 b des
-    e2 b4
+    e2\sfz b4
     a! r r
     R2.*3 %127
     R2.\fermata \bar "||" %128 finis
