@@ -12,9 +12,7 @@ accomp = \markup \remark "accomp."
 fivehatflat = \markup { \concat { \combine \figured-bass 5 \path #.15 #'((rmoveto 0 1.2) (rlineto .5 .5) (rlineto .5 -.5)) \raise #.3 \fontsize #-5 \flat } }
 
 vlne =    \markup \remark  "vlne"
-vlneE =   \markup \remarkE "vlne"
 stac =    \markup \remark  "staccato"
-stacE =   \markup \remarkE "staccato"
 
 
 tempoKyrie = \tempoMarkup "Andante"
@@ -24,7 +22,7 @@ tempoGloria = \tempoMarkup "Allegro vivace"
   tempoCumSancto = \tempoMarkup "Più allegro"
 tempoCredo = \tempoMarkup "Allegro"
   tempoEtIncarnatus = \tempoMarkup "Adagio"
-  tempoEtResurrexit = \tempoMarkup "Allegro"
+  tempoEtResurrexit = \tempoMarkup "Allegro vivace"
 tempoSanctus = \tempoMarkup "Andante"
   tempoPleni = \tempoMarkup "Allegro"
 tempoBenedictus = \tempoMarkup "Larghetto"

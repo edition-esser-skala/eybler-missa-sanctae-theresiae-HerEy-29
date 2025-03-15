@@ -997,7 +997,7 @@ EtResurrexitSopranoNotes = {
     \clef treble
     \key b \major \time 2/2 \autoBeamOff \tempoEtResurrexit
       \set Score.currentBarNumber = #129
-    \mvTr b'2\fE^\tutti b4 b
+    \mvTr b'2\f^\tutti b4 b
     d2 b %130
     c c4 c
     es2 c4 c
@@ -1018,7 +1018,7 @@ EtResurrexitSopranoNotes = {
     c1
     a2 r
     R1*26 %174
-    des1\pE %175
+    \mvTr des1\p^\tutti %175
     des2 des
     c f,
     r f4 f
@@ -1027,7 +1027,7 @@ EtResurrexitSopranoNotes = {
     f2. f4
     f2 r
     R1*22 %204
-    r2 b4\fE b %205
+    \mvTr r2 b4\f^\tutti b %205
     es2 es4 es
     es2 es
     g4. es8 es2
@@ -1040,7 +1040,7 @@ EtResurrexitSopranoNotes = {
     d( es) f( g) %215
     as1
     g2 f4( es)
-    d2 \once \tieDashed es~
+    d2 es~
     es d
     es r %220
     R1*3
@@ -1048,15 +1048,15 @@ EtResurrexitSopranoNotes = {
     es f4 g %225
     f2. d4
     b2 r
-    f\pE f
+    f\p f
     f f
     f1 %230
-    d2 d
+    d2 d\cresc
     g g
     g g
     g1
     es2 r %235
-    g'1\fE
+    g'1\f
     h,2 c
     d2. es4
     f2 r
@@ -1076,7 +1076,7 @@ EtResurrexitSopranoNotes = {
     g'2 g4 g
     g2 es4 c %255
     a!1
-    b2 \once \tieDashed f'~\pE
+    b2 f'~\p
     f es4( des)
     des( c) c( b)
     a!2 c %260
@@ -1085,14 +1085,14 @@ EtResurrexitSopranoNotes = {
     b des,
     des c
     R1 %265
-    c'2.\fE d!4
+    c'2.\f d!4
     es2 a,
     b4 c d es
     f2 d
     b1\p %270
     g
     e
-    f2 r4 c'\fE
+    f2 r4 c'\f
     d2 b4 d
     c2 a4 f %275
     f'1
@@ -1104,10 +1104,10 @@ EtResurrexitSopranoNotes = {
     es2 d
     g f4 es
     d2( c)
-    b4 d( f2) %285
-    d4 d( c2)
-    d4 d( f2)
-    d4 d( c2)
+    b4 d f2 %285
+    d4 d c2
+    d4 d f2
+    d4 d c2
     b r\fermata \bar "|." %289 finis
   }
 }
@@ -1116,21 +1116,21 @@ EtResurrexitSopranoLyrics = \lyricmode {
   Et re -- sur -- %129
   re -- xit %130
   ter -- ti -- a
-  di -- e se --
-  cun -- dum, se --
+  di -- e, sur --
+  re -- xit se --
   cun -- dum Scri --
   ptu -- %135
   ras,
   et a --
-  scen -- dit, a --
   scen -- dit in
-  coe -- lum, %140
+  coe -- lum, a -- %140
+  scen -- dit,
   se --
   det ad
   dex -- te --
   ram, ad
-  dex -- te -- ram, %145
-  dex -- tram
+  dex -- te -- ram %145
+  De -- i
   Pa --
   tris.
 
@@ -1209,21 +1209,21 @@ EtResurrexitSopranoLyrics = \lyricmode {
   tu --
   o --
   rum, et
-  vi -- tam ven --
-  tu -- ri, ven -- %275
-  tu --
-  ri, et
-  vi -- tam ven --
-  tu -- ri, et
-  vi -- tam ven -- %280
-  tu -- ri, ven --
+  vi -- tam, et
+  vi -- tam ex -- %275
+  pe --
+  cto, et
+  vi -- tam ex --
+  pe -- cto, et
+  vi -- tam ex -- %280
+  pe -- cto ven --
   tu -- ri
   sae -- cu -- li,
   a --
-  men, a -- %285
-  men, a --
-  men, a --
-  men, a --
+  men, a -- _ %285
+  _ men, a --
+  men, a -- _
+  _ men, a --
   men. %289 finis
 }
 

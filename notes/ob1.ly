@@ -419,7 +419,7 @@ EtResurrexitOboeI = {
     \clef treble
     \key b \major \time 2/2 \tempoEtResurrexit
       \set Score.currentBarNumber = #129
-    b'2\fE b4 b
+    b'2\f b4 b
     d2 b %130
     c c4 c
     es2 c
@@ -438,26 +438,26 @@ EtResurrexitOboeI = {
     f %145
     d2 b
     a g
-    f r
-    r r4 b
+    \pao f r
+    r r4 \pa b
     a2 g %150
-    f r
+    f4 \pd r r2
     R1*47 %198
-    b4\fE r r2
+    \pao b4\f r r2
     R1*2 %201
-    r2 r4 es
+    r2 r4 \pa es
     d2 c
-    b4 r f' r
+    b4 \pd r f' r
     as r d, r %205
     es1
     c
-    b~
+    \pa b~
     b2 es~
     es4 c d es %210
     f1~
     f2 d
     b b
-    b4 c d es
+    b4 c d es \pd
     d es f g %215
     as1
     g2 f4 es
@@ -468,33 +468,33 @@ EtResurrexitOboeI = {
     g,2 b
     es f4 g %225
     f2. d4
-    b2 r
+    \pao b2 r
     R1*8 %235
-    g'1\fE
+    g'1\f
     h,2 c
     d2. es4
-    f r r2
-    es1 %240
-    d
-    c4 r r2
+    f2 r
+    es es %240
+    d1
+    \pao c4 r r2
     R1*2
-    r2 r4 g %245
+    r2 r4 \pa g %245
     c2 c
-    c1
+    c1 \pd
     e
-    f2 r4-\critnote f,
+    f2 r4 \pa f,
     b2 b %250
-    b1
+    b1 \pd
     d
-    es2 r4 g,
+    es2 r4 \pao g,
     g'2 g
     g es4 c %255
     a!1
     b4 r r2
     R1*8 %265
-    c2.\fE d4
+    c2.\f d4
     es2 a,
-    b4 c d es
+    \pao b4 c d es
     f2 d
     R1*3 %272
     r2 r4 c\fE
@@ -503,17 +503,17 @@ EtResurrexitOboeI = {
     d
     c2 r4 f~
     f h, c d~
-    d es2 es4~
+    d es es es~
     es a, b c~ %280
-    c d d b
+    c d d \pa b
     es2 d4 b
-    g'2 f4 es
+    g'2 f4 \pd es
     d2 c\trill
-    b4 d f2 %285
+    \pa b4 d f2 %285
     d4 d c2
     b4 d f2
-    d4 d c2\trill
-    b r\fermata \bar "|." %289 finis
+    d4 d c2
+    b \pd r\fermata \bar "|." %289 finis
   }
 }
 

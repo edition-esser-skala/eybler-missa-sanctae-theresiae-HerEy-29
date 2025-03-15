@@ -1164,7 +1164,7 @@ EtResurrexitOrgano = {
     \clef bass
     \key b \major \time 2/2 \tempoEtResurrexit
       \set Score.currentBarNumber = #129
-    \mvTr b4\fE-\tuttiE b'8 a b4 f
+    \mvTr b4\f-\tuttiE b'8 a b4 f
     b f d b %130
     f f'8 e f4 c
     f c a f
@@ -1174,8 +1174,8 @@ EtResurrexitOrgano = {
     b b f d
     b b'8 a b4 b,
     f f'8 e f4 f,
-    e e'8 d e4 e,
-    f f'8 e? f4 c %140
+    e e'8 d \hA e4 \hA e,
+    f f'8 e f4 c %140
     a a'8 g a4 a,
     b b'8 a b4 b,
     c c'8 b c4 c,
@@ -1184,43 +1184,43 @@ EtResurrexitOrgano = {
     b b' d, d'
     c, c'8 b c4 c,
     f f,8-\solo g a b c d
-    e g f a g e c e
+    e g f a g \hA e c \hA e
     f4 d b c %150
-    f r8 c-! d-! e-! f-! g-!
-    as4-! r8 f-! g-! as-! b-! c-!
-    des4-! r8 b-! c-! des-! es-! f-!
-    ges2-!\sfE des4-! b-!
-    ges4-! r8. \mvTr ges16\pE_\senzaOrgE ^\tweak TextScript.X-offset #0 ^\stac ges4 r8. ges16 %155
-    ges4 r8. ges16 ges4 r8. ges16
+    f\ff r8 c-! d-! e-! f-! g-!
+    as4-! r8 f-! g-! \hA as-! b-! c-!
+    des4-! r8 b-! c-! \hA des-! es-! f-!
+    ges2-!\sfz des4-! b-!
+    ges4\p^\stac r8. \hA ges16 ges4 r8. \hA ges16 %155
+    ges4 r8. \hA ges16 ges4 r8. \hA ges16
     es4 r8. es16 es4 r8. es16
     es4 r8. es16 es4 r8. es16
     b4 r8. b16 b4 r8. b16
     b4 r8. b16 b4 r8. b16 %160
     f4 r8. f16 f4 r8. f16
     f4 r8. f16 f4 r8. f16
-    ges4 r8. ges16 ges4 r8. ges16
-    ges4 r8. ges16 ges4 r8. ges16
-    ces4 r8. ces16 ces4 r8. ces16 %165
-    ces4 r8. ces16 ces4 r8. ces16
+    ges4 r8. \hA ges16 ges4 r8. \hA ges16
+    ges4 r8. \hA ges16 ges4 r8. \hA ges16
+    ces4 r8. \hA ces16 ces4 r8. \hA ces16 %165
+    ces4 r8. \hA ces16 ces4 r8. \hA ces16
     es4 r8. es16 es4 r8. es16
     es4 r8. es16 es4 r8. es16
-    ges4 r8. ges16 ges4 r8. ges16
-    ges4 r8. ges16 ges4 r8. ges16 %170
-    ges,2 ges
+    ges4 r8. \hA ges16 ges4 r8. \hA ges16
+    ges4 r8. \hA ges16 ges4 r8. \hA ges16 %170
+    ges,2\pp ges
     ges ges
-    f8 f f f f4 r
-    f8 f f f f4 r
-    f8-\tutti f f f f4 r %175
-    f8 f f f f4 r
-    f8 f f f f4 r
-    f8 f f f f4 r
-    f8 f f f f4 r
-    f8 f f f f4 r %180
-    f8 f f f f4 r
-    f8 f f f f4 r
-    es'8 es es es es4 r
-    es8 es es es es4 r
-    d!4^\stac_\senzaOrgE r8. d16 d4 r8. d16 %185
+    f8 f f f f r r4
+    f8 f f f f r r4
+    f8 f f f f r r4 %175
+    f8 f f f f r r4
+    f8 f f f f r r4
+    f8 f f f f r r4
+    f8 f f f f r r4
+    f8 f f f f r r4 %180
+    f8 f f f f r r4
+    f8 f f f f r r4
+    es'8 es es es es r r4
+    es8 es es es es r r4
+    d!4 r8. d16 d4 r8. d16 %185
     b4 r8. b16 b4 r8. b16
     es4 r8. es16 es4 r8. es16
     c4 r8. c16 c4 r8. c16
@@ -1229,23 +1229,23 @@ EtResurrexitOrgano = {
     g4 r8. g'16 g4 r8. g16
     f4 r8. f16 es4 r8. es16
     d4 r8. d16 c4 r8. c16
-    b4 r8. b16 as4 r8. as16
-    g4 r8. g'16 g4 r8. g16 %195
-    c,4 r8. c16 c4 r8. c16
+    b4 r8. b16 as4 r8. \hA as16
+    g4 r8. g16 g4 r8. g16 %195
+    c4 r8. c16 c4 r8. c16
     f4 r8. f16 b4 r8. b16
-    f4 r8. f16 f,4 r8. f16
-    b4\f b'2 a4
+    f4 r8. f16 f4 r8. f16
+    b,4\f b'2 a4
     g f es d %200
     c b a g
-    f f' c' f,
+    f f' c' a
     b d, es f
     b, r as' r
-    f r b-\tutti r %205
-    es, es' b g
+    f r b r %205
+    es,-\tutti es' b g
     es es' c as
     es g b g
-    es b g es
-    as' as, as as' %210
+    es b g g'
+    as as, as \hA as' %210
     a f g a
     b d b f
     d c b c
@@ -1255,11 +1255,11 @@ EtResurrexitOrgano = {
     es g, as as'
     b b, c c'
     as f b b,
-    es es'2-\soloE d4 %220
+    es es'2-\solo d4 %220
     c b as g
     f es d c
     b es b' b,
-    es-\tuttiE es' b es
+    es-\tutti es' b es
     g, b g es %225
     b' b, d f
     b f d b
@@ -1267,48 +1267,48 @@ EtResurrexitOrgano = {
     a f c' f,
     b f d' f, %230
     b d f d
-    h g d' g,
+    h\cresc g d' g,
     h g d' g,
     c g es' g,
     c es g c %235
     es\f c g es
     d g c, g'
-    h, g' h, c
+    h, g' \hA h, c
     d g, a h
     c es g c %240
     g f g g,
     c es'2-\solo c4
     f es d c
-    h a g h,
-    c as' f g-\tuttiE %245
-    c, c' g e
+    h a! g h,
+    c as' f g %245
+    c,-\tutti c' g e
     f as f c
-    g' b g c,
+    g' b! g c,
     f c' as f
     d f d b %250
-    es g es b
+    es! g es b
     f' as f b,
     es b' g es
-    h d h g
+    h d \hA h g
     c es g c %255
-    f, a! c es
+    es, a! c es
     d r r2
-    ges,,\p ges'
+    \mvTr ges,,\p-\solo ges'
     ges ges
     f f, %260
     f f
     e e'
     e e
     f1
-    f,4\f f' c a %265
+    \mvTr f,4\f-\tutti f' c a %265
     f f' f f
     f, f' f f
     b, b' b b
     b, b' b b
-    b,2\pE r %270
-    g r
-    e r
-    f4\f a c f
+    \mvTr b,2-!\p-\solo r %270
+    g-! r
+    e-! r
+    \mvTr f4\f-\tutti a c f
     f, b d f
     f, a c f %275
     d f d b
@@ -1316,12 +1316,12 @@ EtResurrexitOrgano = {
     g f es d
     c c'8 h c4 c,
     f es d c %280
-    b b'8 a b4 as
+    b! b'8 a b4 as
     g g, f f'
-    es-\critnote es, d es
+    es es, d es
     f f'8 e f4 f,
     b b' a f %285
-    b-\critnote b, f' f,
+    b b, f' f,
     b b' a f
     b b, f' f,
     b2 r\fermata \bar "|." %289 finis
@@ -1332,10 +1332,10 @@ EtResurrexitBassFigures = \figuremode {
   r1 %129
   r %130
   r
-  <[7]>
-  r2 <[6]>
+  \bo <[7]>
+  r2 \bc <[6]>
   <6>1
-  <7 4>2 <6> %135
+  <7 4>2 <6 4 3> %135
   r1
   r
   r
@@ -1343,34 +1343,33 @@ EtResurrexitBassFigures = \figuremode {
   r %140
   <6>
   <6 5>
-  <6 _->
+  <6 4 _->
   <6>
-  <6 5> %145
-  r2 <[6]>
-  <6 4> <[5] _!>
-  r4 \bo <[3]>8 <3> q q <_!> <3>
-  <6>2 <6!>
-  <9>4 <5> <6 5> \bc <[_! _]> %150
+  <6 5-> %145
+  r
+  <6 4>2 <[5] _!>
+  r1
+  \bo <[6 _]>2 <6!>
+  <9>4 <5> <6 5> \bc <[7 _!]> %150
   r1*24 %174
   <6- 4>1 %175
-  <\t \t>
+  r
   <5 _!>
-  <\t \t>
+  r
   <6- 4>
-  <\t \t> %180
-  <5 _!>2. <[6- 4]>4
-  <5 _!>1
-  <4! 2>
-  <\t \t>
-  r1*14 %198
+  r %180
+  <[5] _!>
+  r
+  <4 2>
+  r1*15 %198
   \bo <[5 3]>2. <6>4
-  r <2> <5> <6!> %200
-  r2 <5>4 <6!>
+  r2. <6!>4 %200
+  r2. q4
   r2. <7>4
-  <9> <6> \bc <[6 5]>2
-  r <[2]>
-  <[6 4 _-]>1 %205
-  <[5 3]>
+  <9> <6> <6 5> <7>
+  r1
+  <6 _-> %205
+  \bc <[5 3]>
   <6 4->
   <[5 3]>
   r
@@ -1378,77 +1377,77 @@ EtResurrexitBassFigures = \figuremode {
   <6>
   r
   <[6]>
-  \bo <[6 _]>4 <6 4> q q
-  <4> <6> <6 _-> \bc <[4 3]> %215
-  <6 5->1
-  r2 \bo <[8] 6>4 \bc <[7] 5>
+  r
+  <4> %215
+  <6 5->
+  r2 <6>4 <5>
   <7->2 <5>
-  <[6 5]>1
-  r2. \bo <[6]>4 %220
-  <3> <\t> <5> <6>
-  <_-> <6> q \bc <[6-]>
-  r1
-  r
-  <[6]> %225
-  r
-  r
-  \bo <[6 5]>1 \bassFigureExtendersOn
-  <6 5>2. \bc <[6 5]>4
-  r1 %230
-  r
   \bo <[6 5]>1
-  <6 5>2. \bc <[6 5]>4 \bassFigureExtendersOff
+  r2. <6>4 %220
+  r2. q4
+  <_->2. <6->4
   r1
+  r
+  r %225
+  r
+  r
+  <6 5>
+  r
+  r %230
+  r
+  \bc <[6 5]>
+  r
+  r
   r %235
-  <[6]>
+  r
   <6!>
-  \bo <[6]>2 \once \bassFigureExtendersOn \bc q4 <3>
-  <6!>4 \bo <[8 _!]> \bassFigureExtendersOn <8 3> \bc <[8 3\!]> \bassFigureExtendersOff
-  r1 %240
+  <[6]>2. <3>4
+  <6!>1
+  r %240
   <4>2 <_!>
-  r4 \bo <[6 _]>2.
-  <_->4 <6> <6!>2
-  <6>4 <6\\> <_!> <6>
-  r2 <6 _->4 \bc <[_! _]> %245
+  r1
+  \bo <[_- _]>
+  <5>4 <6\\> <_!>2
+  r <6 _->4 \bc <[_! _]> %245
   <_!>1
   <_->
   <6!>
   <_->
-  <6> %250
+  <[6]> %250
   r
   <6 [_-]>
   r
   <6>
   r %255
-  <[7- _!]>
+  <4!>
   <[6]>
   <7>2 <6>4 <5->
-  \bo <[6 5-]> <\t 4> <6! \t> \bc <[\t 3]>
-  <_!>2 <7> %260
-  <[8] 6-> <7 [5]>
+  <6 4>2 <6!>
+  <_!> <7-> %260
+  <6- 4> <7 [5]>
   <7->1
   <\t>
   <6- 4>2 <[5] _!>
   r1 %265
-  <[5 3]>2. <6! 4>4
+  <5 3>2 \once \bassFigureExtendersOn q4 <6[!] 4>
   <7>1
   r
   r
-  <[5 3]> %270
-  <[\t \t]>
-  q
-  <[5 3]>
+  r %270
+  r
+  r
+  r
   <6 4>
-  <[5 3]> %275
-  <[6]>
-  r2. <10 8>4
-  <_!>4 <\t> <6> <6!>
+  \bo <[5 3]> %275
+  \bc <[6 _]>
+  r2. <10 5>4
+  <_!>2 <6>4 <6!>
   <\t> <8 3>2.
-  r4 <[2]> <6-> <6> %280
-  <\t> <8 3>2 <\t \t>4
+  r2 <6->4 <6> %280
+  <\t> <8 3>2.
   <6>2 <6 4>
-  <5>4 <4 3> <6> q
-  <6 4>2 <[5] 3>
+  <5 3>4 <6 4 3> <6> q
+  <6 4>2 <5 3>
   r <6> %285
   r <4>4 <3>
   r2 <6>

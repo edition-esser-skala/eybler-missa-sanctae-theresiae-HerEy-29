@@ -1073,12 +1073,12 @@ EtResurrexitTenoreNotes = {
     \clef "treble_8"
     \key b \major \time 2/2 \autoBeamOff \tempoEtResurrexit
       \set Score.currentBarNumber = #129
-    \mvTr d2\fE^\tuttiE d4 d
+    \mvTr d2\f^\tutti d4 d
     b2 d %130
     a a4 a
     a2 c4 a
     b2 b4 b
-    b2 f'4 f,
+    b( d) f f,
     g2( f) %135
     f r
     b2 r4 b
@@ -1094,16 +1094,16 @@ EtResurrexitTenoreNotes = {
     a,( g)
     f r
     R1*26 %174
-    b1\p %175
+    \mvTr b1\p^\tutti %175
     b2 b
     a! a
-    r a!4 a
+    r a4 a
     b2 f'
     des b4 b %180
-    a!2. b4
-    a!2 r
+    a2. b4
+    a2 r
     R1*22 %204
-    r2 b4\f b %205
+    r2 \mvTr b4\f^\tutti b %205
     b2 b4 b
     c2 c
     b4. b8 b2
@@ -1124,15 +1124,15 @@ EtResurrexitTenoreNotes = {
     es d4 es %225
     d2. b4
     f2 r
-    es\pE es
+    es\p es
     es es
     d1 %230
-    f2 f
+    f2 f\cresc
     f f
     f f
     es1
     g2 r %235
-    c1\fE
+    c1\f
     f2 es
     d2. c4
     h2 r
@@ -1153,9 +1153,9 @@ EtResurrexitTenoreNotes = {
     es2 es4 es %255
     c1
     b2 r
-    b1~\pE
+    b1~\p
     b2 b
-    c es %260
+    c es! %260
     des c
     b g
     g1
@@ -1173,17 +1173,17 @@ EtResurrexitTenoreNotes = {
     f,2 r4 c' %275
     d2 b4 d
     c2 a4 d
-    h( d) c h
+    h( d) c \hA h
     h( c) c c
     a( c) b a %280
     a( b) b d
     b2 b
     b4( c) d g,
     b2( a)
-    b4 b( c2 %285
-    b4) b b( a)
-    b b( c2
-    b4) b b( a)
+    b4 b c2 %285
+    b4 b b( a)
+    b b c2
+    b4 b b( a)
     b2 r\fermata \bar "|." %289 finis
   }
 }
@@ -1192,21 +1192,21 @@ EtResurrexitTenoreLyrics = \lyricmode {
   Et re -- sur -- %129
   re -- xit %130
   ter -- ti -- a
-  di -- e se --
-  cun -- dum, se --
+  di -- e, sur --
+  re -- xit se --
   cun -- dum Scri --
   ptu -- %135
   ras,
   et a --
-  scen -- dit, a --
   scen -- dit in
-  coe -- lum, %140
+  coe -- lum, a -- %140
+  scen -- dit,
   se --
   det ad
   dex -- te --
   ram, ad
-  dex -- te -- ram, %145
-  dex -- tram
+  dex -- te -- ram %145
+  De -- i
   Pa --
   tris.
 
@@ -1284,22 +1284,22 @@ EtResurrexitTenoreLyrics = \lyricmode {
   mor -- %270
   tu --
   o --
-  rum, et
-  vi --
-  tam ven -- %275
-  tu -- ri, ven --
-  tu -- ri, et
-  vi -- tam ven --
-  tu -- ri, et
-  vi -- tam ven -- %280
-  tu -- ri, ven --
+  rum, ex --
+  pe --
+  cto, et %275
+  vi -- tam, et
+  vi -- tam, et
+  vi -- tam ex --
+  pe -- cto, et
+  vi -- tam ex -- %280
+  pe -- cto ven --
   tu -- ri
   sae -- cu -- li,
   a --
-  men, a -- %285
-  men, a --
-  men, a --
-  men, a --
+  men, a -- _ %285
+  _ men, a --
+  men, a -- _
+  _ men, a --
   men. %289 finis
 }
 

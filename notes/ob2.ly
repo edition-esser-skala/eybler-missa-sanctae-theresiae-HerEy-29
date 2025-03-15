@@ -387,12 +387,12 @@ EtResurrexitOboeII = {
     \clef treble
     \key b \major \time 2/2 \tempoEtResurrexit
       \set Score.currentBarNumber = #129
-    f2\fE f4 f
+    f2\f f4 f
     f2 f %130
     a a4 a
     a2 a
-    b b
-    b r
+    b b4 b
+    b2 r
     R1*2 %136
     b2. b4
     a b g a
@@ -403,24 +403,24 @@ EtResurrexitOboeII = {
     a
     b
     c %145
-    b2 f
+    b2 f~
     f e
     f r
     r r4 g~
     g f2 e4 %150
-    f2 r
+    f r r2
     R1*47 %198
-    b4\fE r r2
+    b4\f r r2
     R1*2 %201
-    r2 r4 \once \tieDashed c~
+    r2 r4 c~
     c b2 a4
     b r d r
     f r as, r %205
     g1
     as
     g
-    es
-    as %210
+    es2 es~
+    es as %210
     f4 a b c
     f,2 b
     R1
@@ -428,21 +428,21 @@ EtResurrexitOboeII = {
     b4 c d es %215
     f1
     es2 c
-    as? g
+    as g
     f1
-    g4-\critnote r r2 %220
+    g4 r r2 %220
     R1*3
     es2 g
     b2. es4 %225
     d2. b4
     b2 r
     R1*8 %235
-    g1\fE
-    g
+    g1\f
+    g2 g
     g2. c4
-    h4 r r2
-    c1~ %240
-    c2 h
+    h2 r
+    c c~ %240
+    c h
     c4 r r2
     R1*2
     r2 r4 g %245
@@ -456,10 +456,10 @@ EtResurrexitOboeII = {
     g2 r4 g
     g2 g
     g1 %255
-    f
-    f4-\critnote r r2
+    f~
+    f4 r r2
     R1*8 %265
-    a2.\fE b4
+    a2.\f b4
     c1
     b4 a b c
     d2 b
@@ -469,10 +469,10 @@ EtResurrexitOboeII = {
     a %275
     b
     a2 r4 f
-    d g2 \once \tieDashed h4~
-    h c c r
+    d g2 h4~
+    h c c g
     c, f2 a4~ %280
-    a b2 b4
+    a b b b
     b2. b4
     b2. c4
     b2 a\trill

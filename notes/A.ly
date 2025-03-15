@@ -1000,7 +1000,7 @@ EtResurrexitAltoNotes = {
     \clef treble
     \key b \major \time 2/2 \autoBeamOff \tempoEtResurrexit
       \set Score.currentBarNumber = #129
-    \mvTr f2\fE^\tuttiE f4 f
+    \mvTr f2\f^\tutti f4 f
     f2 f %130
     f f4 f
     f2 f4 f
@@ -1021,7 +1021,7 @@ EtResurrexitAltoNotes = {
     f( e)
     f r
     R1*26 %174
-    f1\pE %175
+    \mvTr f1\p^\tutti %175
     f2 f
     f f
     r f4 f
@@ -1030,7 +1030,7 @@ EtResurrexitAltoNotes = {
     c2. des4
     c2 r
     R1*22 %204
-    r2 b'4\fE b %205
+    r2 \mvTr b'4\f^\tutti b %205
     g2 g4 g
     as2 as
     g4. g8 g2
@@ -1042,7 +1042,7 @@ EtResurrexitAltoNotes = {
     f4( es) d( c)
     b2 b %215
     f' b
-    b( as4 g)
+    b as4 g
     f2 es
     f1
     g2 r %220
@@ -1051,15 +1051,15 @@ EtResurrexitAltoNotes = {
     b b4 b %225
     b2. f4
     d2 r
-    c\pE c
+    c\p c
     c c
     b1 %230
-    b2 b
+    b2 b\cresc
     d d
     d d
     c1
     c2 r %235
-    g'1\fE
+    g'1\f
     g2 g
     g2. g4
     g2 r
@@ -1080,15 +1080,15 @@ EtResurrexitAltoNotes = {
     g2 g4 g %255
     f1
     f2 r
-    b,\pE c4( des)
+    b,\p c4( des)
     es2 e
-    \once \tieDashed f1~ %260
+    f1~ %260
     f2 es
     des1~
     des2 b
     b a!
     R1 %265
-    a'2.\fE b4
+    a'2.\f b4
     c2 f,
     f4 a b c
     d2 b
@@ -1119,21 +1119,21 @@ EtResurrexitAltoLyrics = \lyricmode {
   Et re -- sur -- %129
   re -- xit %130
   ter -- ti -- a
-  di -- e se --
-  cun -- dum, se --
+  di -- e, sur --
+  re -- xit se --
   cun -- dum Scri --
   ptu -- %135
   ras,
   et a --
-  scen -- dit, a --
   scen -- dit in
-  coe -- lum, %140
+  coe -- lum, a -- %140
+  scen -- dit,
   se --
   det ad
   dex -- te --
   ram, ad
-  dex -- te -- ram, %145
-  dex -- tram
+  dex -- te -- ram %145
+  De -- i
   Pa --
   tris.
 
@@ -1158,9 +1158,9 @@ EtResurrexitAltoLyrics = \lyricmode {
   qui __ ex __
   Pa -- tre %215
   Fi -- li --
-  o --
-  que pro --
-  ce --
+  o -- que pro --
+  ce -- _
+  _
   dit. %220
 
   Qui cum %224
@@ -1212,14 +1212,14 @@ EtResurrexitAltoLyrics = \lyricmode {
   tu --
   o --
   rum, et
-  vi -- tam ven --
-  tu -- ri, ven -- %275
-  tu --
-  ri, et
-  vi -- tam ven --
-  tu -- ri, et
-  vi -- tam ven -- %280
-  tu -- ri, ven --
+  vi -- tam, et
+  vi -- tam ex -- %275
+  pe --
+  cto, et
+  vi -- tam ex --
+  pe -- cto, et
+  vi -- tam ex -- %280
+  pe -- cto ven --
   tu -- ri
   sae -- cu -- li,
   a --

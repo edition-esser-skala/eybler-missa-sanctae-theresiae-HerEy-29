@@ -345,3 +345,86 @@ EtIncarnatusCornoI = {
     R2.\fermata \bar "||" %128 finis
   }
 }
+
+EtResurrexitCornoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 2/2 \tempoEtResurrexit
+      \set Score.currentBarNumber = #129
+    c'2\f c4 c
+    c1 %130
+    d2 d4 d
+    d1
+    e2 f
+    g e
+    R1 %135
+    r4 c c c
+    c1
+    d
+    \pao d
+    d %140
+    g~
+    g~
+    g~
+    g
+    f %145
+    e2 c
+    d1
+    d4 r r2
+    R1*2 %150
+    g,4 r r2
+    R1*47 %198
+    c4\f r r2
+    R1*2 %201
+    d1
+    e2 d
+    c4 r c r
+    g'1 %205
+    f
+    d
+    f~
+    f
+    d %210
+    d
+    e2 e~
+    e e
+    \pao c4 r r2
+    e4 r r2 %215
+    g1
+    a2 r
+    r f
+    g1
+    \pao f4 r r2 %220
+    R1*3
+    r2 c
+    c c %225
+    c r
+    R1*11 %237
+    r2 g'~
+    g g
+    f r %240
+    R1
+    \pao d2 r
+    R1*23 %265
+    d2.\fE e4
+    f2 d
+    c4 d e f
+    g2 e
+    R1*4 %273
+    c1\fE
+    d %275
+    c2 e
+    d r
+    R1*2
+    d2 c4 d %280
+    d e e r
+    c2 c
+    c r4 f
+    e2 d
+    c d %285
+    e d
+    c d
+    e d
+    c r\fermata \bar "|." %289 finis
+  }
+}

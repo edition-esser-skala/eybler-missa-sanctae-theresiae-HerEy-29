@@ -241,7 +241,7 @@ EtResurrexitClarinoII = {
     \clef treble
     \key c \major \time 2/2 \tempoEtResurrexit
       \set Score.currentBarNumber = #129
-    e2\fE e4 e
+    e2\f e4 e
     c2 e %130
     g g4 g
     d'2 g,
@@ -250,7 +250,7 @@ EtResurrexitClarinoII = {
     R1 %135
     r4 c e g
     c2 c4 c
-    g4_\critnote r r2
+    g4 r r2
     d' d4 d
     g, r r2 %140
     g,4 r r2
@@ -262,7 +262,7 @@ EtResurrexitClarinoII = {
     R1
     g4 r r2
     R1*50 %198
-    c4\fE r r2
+    c4\f r r2
     R1*4 %203
     c4 r c r
     c c8 c c4 c %205
@@ -271,12 +271,12 @@ EtResurrexitClarinoII = {
     g'1
     c2 r
     c,2 c
-    c1
-    c %215
-    c
+    c1~
+    c~ %215
+    c~
     c4 r r2
     R1*47 %264
-    g2\fE g %265
+    g2\f g %265
     g r
     g'1
     e4 g c d
@@ -284,9 +284,9 @@ EtResurrexitClarinoII = {
     R1*3 %272
     r2 r4 g\fE
     c,2 e4 c
-    g'2_\critnote r4 g %275
+    g' r r g %275
     c,2 e4 c
-    g'2 r
+    g' r r2
     R1*4 %281
     c,2 c4 c
     c2 r

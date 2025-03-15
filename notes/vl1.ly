@@ -537,7 +537,7 @@ EtResurrexitViolinoI = {
     a c c c f, c' c c
     es c c c f, c' c c
     d b b b es b b b
-    f' d d b d b b g
+    f' d d b d b b f
     g a b g a b c a %135
     b d, d f f b b d
     d b b b f' d d d
@@ -552,43 +552,43 @@ EtResurrexitViolinoI = {
     f d d d d b b b
     a c f a g,4 e'
     f,8 g a b c d e f
-    g e a f b g e b
+    g e a f b g \hA e b
     a c f a, g4 e' %150
-    f, r8 c-! d-! e-! f-! g-!
-    as4-! r8 f-! g-! as-! b-! c-!
-    des4-! r8 b-! c-! des-! es-! f-!
-    ges2\fz des4 b
-    ges4 r8. \mvTr ges16\pE-\stac ges4 r8. ges16 %155
-    ges4 r8. ges16 ges4 r8. ges16
-    ges4 r8. ges16 ges4 r8. ges16
-    ges4 r8. ges16 ges4 r8. ges16
+    f,\ff r8 c d e f g
+    as4 r8 f g \hA as b c
+    des4 r8 b c \hA des es f
+    ges2\sfz des4 b
+    ges4\p^\stac r8. \hA ges16 ges4 r8. \hA ges16 %155
+    ges4 r8. \hA ges16 ges4 r8. \hA ges16
+    ges4 r8. \hA ges16 ges4 r8. \hA ges16
+    ges4 r8. \hA ges16 ges4 r8. \hA ges16
     b4 r8. b16 b4 r8. b16
     b4 r8. b16 b4 r8. b16 %160
-    des4 r8. des16 des4 r8. des16
-    des4 r8. des16 des4 r8. des16
+    des4 r8. \hA des16 des4 r8. \hA des16
+    des4 r8. \hA des16 des4 r8. \hA des16
     b4 r8. b16 b4 r8. b16
     b4 r8. b16 b4 r8. b16
-    ces4 r8. ces16 ces4 r8. ces16 %165
-    ces4 r8. ces16 ces4 r8. ces16
-    ces4 r8. ces16 ces4 r8. ces16
-    ces4 r8. ces16 ces4 r8. ces16
+    ces4 r8. \hA ces16 ces4 r8. \hA ces16 %165
+    ces4 r8. \hA ces16 ces4 r8. \hA ces16
+    ces4 r8. \hA ces16 ces4 r8. \hA ces16
+    ces4 r8. \hA ces16 ces4 r8. \hA ces16
     b4 r8. b16 b4 r8. b16
     b4 r8. b16 b4 r8. b16 %170
-    e,2 e
+    e,2\pp e
     e e
-    f8 f f f f4 r
-    f8 f f f f4 r
-    f8 f f f f4 r %175
-    f8 f f f f4 r
-    f8 f f f f4 r
-    f8 f f f f4 r
-    f8 f f f f4 r
-    f8 f f f f4 r %180
-    f8 f f f f4 r
-    f8 f f f f4 r
-    a!8 a a a a4 r
-    a8 a a a a4 r
-    b4^\stacE r8. b16 b4 r8. b16 %185
+    f8 f f f f r r4
+    f8 f f f f r r4
+    f8 f f f f r r4 %175
+    f8 f f f f r r4
+    f8 f f f f r r4
+    f8 f f f f r r4
+    f8 f f f f r r4
+    f8 f f f f r r4 %180
+    f8 f f f f r r4
+    f8 f f f f r r4
+    a!8 a a a a r r4
+    a8 a a a a r r4
+    b4 r8. b16 b4 r8. b16 %185
     d4 r8. d16 d4 r8. d16
     g,4 r8. g16 g4 r8. g16
     es'4 r8. es16 es4 r8. es16
@@ -606,10 +606,10 @@ EtResurrexitViolinoI = {
     b c a b g a f g %200
     es f d es c d b c
     a b c d es g f es
-    d f b d, c4 <f, c' a'>
-    <d b'> <b f' d'> r <d b' f'>
+    d f b b, c4 a'
+    b, <f d'> r <d b' f'>
     r <d b' as'> r <b f' d'> %205
-    <b g' es'> es8 g g b b es
+    es' es,8 g g b b es
     es4 es,8 as as c c es
     g es es es b es es es
     g, es' es es es, es' es es
@@ -619,71 +619,71 @@ EtResurrexitViolinoI = {
     b c c d d es es f
     f b a c b d c es
     d b es b f' b, g' b, %215
-    as' b, b b b as' as as
+    as' b, b b b \hA as' as as
     b, g' g g g f f es
     d f, f f es es' es es
     f, es' es es b,4 d'
     es, f8 g as b c d %220
     es f d es c es f g
-    as b g as f g es f
+    as b g \hA as f g es f
     d b' g es f,4 d'
     es,8 g g g g b b b
     b es es es es f f g %225
-    f d d d d b b b
-    d b b b f d d d
-    c(\p f) f-! f-! a,!( f') f-! f-!
-    c( f) f-! f-! a,( f') f-! f-!
-    d( f) f-! f-! b,( f') f-! f-! %230
-    d( f) f-! f-! b,( f') f-! f-!
-    d( g) g-! g-! h,( g') g-! g-!
-    d( g) g-! g-! h,( g') g-! g-!
-    es( g) g-! g-! c,( g') g-! g-!
-    es( g) g-! g-! c( es) es-! es-! %235
-    g(\f es) es-! es-! c( g) g-! g-!
+    f d d d b f f f
+    d' b b b f d d d
+    c\p f f f a,! f' f f
+    c f f f a, f' f f
+    d f f f b, f' f f %230
+    d f f f b, f' f f
+    d g g g h, g' g g
+    d g g g h, g' g g
+    es g g g c, g' g g
+    es g g g c es es es %235
+    g\f es es es c g g g
     f h h h es, c' c c
     d, d' d d d es es f
     f h, h c c d d es
     es c c c g es es es %240
-    d c' c c d,4 <g, d' h'>
-    c c'8 d es f g es
-    as b g as f g es f
+    d c' c c g,4 h'
+    c, c'8 d es f g es
+    as b g \hA as f g es f
     d es c d h c d g,
-    es g c es, d4 <g, d' h'> %245
-    <g es' c'> c8( e) e( g) g( c)
-    c4 c,8( f) f( as) as( c)
-    c4 c,8( e) e( g) g( c)
-    as4 c,8( f) f( as) as( c)
-    b4 b,8( d) d( f) f( b) %250
-    b4 b,8( es) es( g) g( b)
-    b4 b,8( d) d( f) f( as)
-    g4 g8( b) b( es) es( g)
-    g4 g,8( h) h( d) d( g)
-    g4 g,8( c) c( es) es( g) %255
-    a,!4 c8( f) f( a) a( c)
+    es g c es, d4 h' %245
+    c c,8 e e g g c
+    c4 c,8 f f as as c
+    c4 c,8 e e g g c
+    as4 c,8 f f \hA as as c
+    b4 b,8 d d f f b %250
+    b4 b,8 es es g g b
+    b4 b,8 d d f f as
+    g4 g8 b b es es g
+    g4 g,8 h h d d g
+    g4 g,8 c c es es g %255
+    a,!4 c8 f f a a c
     b4 r f2~\p
     f es4( des)
     des( c) c( b)
     a!2 c %260
     R1
-    r2 b
+    r2 b~
     b des,
     des\trill c
-    f8(\f e) g( f) a( g) b( a) %265
+    f8\f e g f a g b a %265
     c a f a c a d! b
-    es c c a c a f a
+    es c c a c a a f
     b a c b d c es d
     f d d b d b b f
-    d4-! d'(\p b f) %270
-    r b( g-\critnote d)
+    d4\p d'( b f) %270
+    r b( g d)
     r g( e b)
-    a8(\f c) c( f) f( a) a( c)
-    d( b) f-! f-! f( b) d-! d-!
-    c( a) f-! f-! f( a) c-! c-! %275
-    b( f b d) f f f f
+    a8\f c c f f a a c
+    d b f f f b d d
+    c a f f f a c c %275
+    b f b d f f f f
     a, f a c f f f f
     f h, h h d c es d
     f es es es g, es' es es
-    es a, a a c b d c %280
+    es a, a a c b! d c %280
     es d d d d b b b
     b es es es d, d' d d
     b g' g g f b g es
@@ -691,8 +691,8 @@ EtResurrexitViolinoI = {
     b, f b d f f f f %285
     d f d b c es c a
     b f b d f f f f
-    d f b d, c4 <f, c' a'>
-    <d b' b'>2 r\fermata \bar "|." %289 finis
+    d f b d, c4 a'
+    b,2 r\fermata \bar "|." %289 finis
   }
 }
 

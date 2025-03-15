@@ -976,7 +976,7 @@ EtResurrexitBassoNotes = {
     \clef bass
     \key b \major \time 2/2 \autoBeamOff \tempoEtResurrexit
       \set Score.currentBarNumber = #129
-    \mvTr b'2\fE^\tuttiE b4 b
+    \mvTr b'2\f^\tutti b4 b
     b2 b, %130
     f' f4 f
     c'2 a4 f
@@ -997,7 +997,7 @@ EtResurrexitBassoNotes = {
     c1
     f2 r
     R1*7 %155
-    r2 r4 \mvTr des\pE^\solo
+    r2 r4 des^\solo
     ges2. ges4
     ges2 ges
     b2. as4
@@ -1016,7 +1016,7 @@ EtResurrexitBassoNotes = {
     ges2 ges
     f r
     R1
-    f'1^\tutti %175
+    \mvTr f'1\p^\tutti %175
     f2 f
     f f
     r f4 f
@@ -1034,20 +1034,20 @@ EtResurrexitBassoNotes = {
     d2 b
     b' r
     r b~
-    b c4 d
+    b c4( d)
     es2 es, %195
     r es'4( c)
     a!2 b
     f1\trill
     b,2 r
     R1*5 %204
-    r2 \mvTr b'4\fE^\tutti b %205
+    r2 \mvTr b'4\f^\tutti b %205
     es,2 es4 es
     es2 es
     es4. es8 es2
     g2. g4
     as2. as4 %210
-    a2.( c4)
+    a1
     b2 r
     R1
     b2 b
@@ -1062,15 +1062,15 @@ EtResurrexitBassoNotes = {
     g f4 es %225
     b'2. b,4
     b2 r
-    a!\pE a
+    a!\p a
     a a
     b1 %230
-    b2 b
+    b2 b\cresc
     h h
     h h
     c1
     c2 r %235
-    es1\fE
+    es1\f
     d2 c
     h2. c4
     d2 r
@@ -1091,7 +1091,7 @@ EtResurrexitBassoNotes = {
     c2 c4 c %255
     es1
     d2 r
-    ges\pE ges
+    ges\p ges
     ges ges
     f f %260
     f f
@@ -1118,10 +1118,10 @@ EtResurrexitBassoNotes = {
     g2 f
     es d4 es
     f1
-    b,4 b'( a2 %285
-    b4) b f2
-    b,4 b'( a2
-    b4) b f2
+    b,4 b' a2 %285
+    b4 b f2
+    b,4 b' a2
+    b4 b f2
     b, r\fermata \bar "|." %289 finis
   }
 }
@@ -1130,21 +1130,21 @@ EtResurrexitBassoLyrics = \lyricmode {
   Et re -- sur -- %129
   re -- xit %130
   ter -- ti -- a
-  di -- e se --
-  cun -- dum, se --
+  di -- e, sur --
+  re -- xit se --
   cun -- dum Scri --
   ptu -- %135
   ras,
   et a --
-  scen -- dit, a --
   scen -- dit in
-  coe -- lum, %140
+  coe -- lum, a -- %140
+  scen -- dit,
   se --
   det ad
   dex -- te --
   ram, ad
-  dex -- te -- ram, %145
-  dex -- tram
+  dex -- te -- ram %145
+  De -- i
   Pa --
   tris.
 
@@ -1184,9 +1184,9 @@ EtResurrexitBassoLyrics = \lyricmode {
   fi -- %190
   nis, non,
   non,
-  non __
-  e -- rit
-  fi -- nis, %195
+  cu --
+  ius
+  re -- gni %195
   non
   e -- rit
   fi --
@@ -1257,22 +1257,22 @@ EtResurrexitBassoLyrics = \lyricmode {
   mor -- %270
   tu --
   o --
-  rum, et
-  vi --
-  tam ven -- %275
-  tu -- ri, ven --
-  tu -- ri, et
-  vi -- tam ven --
-  tu -- ri, et
-  vi -- tam ven -- %280
-  tu -- ri, ven --
+  rum, ex --
+  pe --
+  cto, et %275
+  vi -- tam, et
+  vi -- tam, et
+  vi -- tam ex --
+  pe -- cto, et
+  vi -- tam ex -- %280
+  pe -- cto ven --
   tu -- ri
   sae -- cu -- li,
   a --
-  men, a -- %285
-  men, a --
-  men, a --
-  men, a --
+  men, a -- _ %285
+  _ men, a --
+  men, a -- _
+  _ men, a --
   men. %289 finis
 }
 
