@@ -428,3 +428,164 @@ EtResurrexitCornoI = {
     c r\fermata \bar "|." %289 finis
   }
 }
+
+SanctusCornoI = {
+  \relative c' {
+    \clef treble
+    \twofourtime \key c \major \time 3/4 \tempoSanctus
+    R2.
+    e'4\f d r
+    R2.
+    f4\f e r
+    g2. %5
+    f
+    d
+    e2 d4
+    \pao c2.
+    d4 r r %10
+    R2.*2 \noBreak
+    R2.\fermata \bar "||"
+    \time 2/4 \tempoPleni R2 \noBreak
+    r4 r8 d\f %15
+    e d r d
+    e d r d
+    e d e d
+    e d r4
+    e2 %20
+    f8 r r4
+    e d
+    c r
+    R2
+    r8 \pa d e f %25
+    g f d4 \pd
+    c r
+    R2*3 %30
+    c4\f r
+    R2
+    d4 r
+    r r8 \pao g,\p
+    c4. d8 %35
+    e4. f8
+    g2
+    e4 r
+    c\f r
+    R2 %40
+    e4 d
+    c r
+    d2
+    e4 r
+    d2 %45
+    c4 r\fermata \bar "|." %46 finis
+  }
+}
+
+BenedictusCornoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 2/2 \tempoBenedictus
+    R1*84 \noBreak %84
+    r2\fermata r4\fermata r8 r \bar "|" %85
+    \twofourtime \time 2/4 \tempoOsanna
+      R2*4
+    c'4\f r %90
+    R2
+    d4 r
+    r r8 \pao g,\p
+    c4. d8
+    e4. f8 %95
+    g2
+    e4 r
+    c\f r
+    R2
+    e4 d %100
+    c r
+    d2
+    e4 r
+    d2
+    c4 r\fermata \bar "|." %105 finis
+  }
+}
+
+AgnusCornoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/4 \tempoAgnus
+    R2.*53 \noBreak %53
+    R2.\fermata \bar "||"
+    \twofourtime \time 2/4 \tempoDona \newSpacingSection
+      R2*4 %58
+    c'4\pp d
+    e f~ %60
+    f e
+    d r
+    c2\f
+    c
+    c %65
+    c
+    R2*2
+    d2
+    c4 r %70
+    R2*11 %81
+    d4\p d
+    d2~
+    d~
+    d~ %85
+    d
+    R2*8 %94
+    g2~\f %95
+    g~
+    g~
+    g
+    R2*4 %102
+    d2\f
+    d4 r
+    \pa d d \pd %105
+    d r
+    R2*8 %114
+    d2\f %115
+    e4 c
+    d e
+    d r
+    c2
+    c %120
+    c
+    c
+    r4 d
+    e f
+    e d %125
+    c8 g' e c
+    d2
+    e
+    d
+    e %130
+    f4 e
+    f e
+    r f
+    e d
+    R2*11 %145
+    g4\p g
+    g2~
+    g~
+    g~
+    g %150
+    R2*4
+    c,4\p c %155
+    c r
+    e d
+    c r
+    c2~\f
+    c~ %160
+    c~
+    c
+    R2*4 %166
+    d2\f
+    e4 r
+    e d
+    c r %170
+    R2*4
+    d2\sfp %175
+    e4 r
+    d2\pp
+    c4 r\fermata \bar "|." %178 finis
+  }
+}

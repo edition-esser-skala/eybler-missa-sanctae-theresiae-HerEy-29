@@ -46,8 +46,8 @@ KyrieOboeI = {
     R2.*4 %50
     f'2.~\p
     f8(\f e f fis g\sf es)
-    c( d es\sf c g a)
-    b4 r r
+    \pa c( d es\sf c g a)
+    b4 \pd r r
     R2.*4 %58
     c2.\sfp
     d\sfp %60
@@ -522,43 +522,43 @@ SanctusOboeI = {
     \clef treble
     \twofourtime \key b \major \time 3/4 \tempoSanctus
     R2.
-    d'4\f c r
+    d'4-!\f c-! r
     R2.
-    es4\fE d r
+    es4\f d r
     f2. %5
     g
     c,2 f4
-    d8.\trill es16 f4 r
+    d8.\turn es16 f4 r
     e2.
     f4 r r %10
     R2.*2 \noBreak
     R2.\fermata \bar "||"
-    \time 2/4 \tempoPleni c8 f f f \noBreak
+    \time 2/4 \tempoPleni \pa c8(\f f) f f \pd \noBreak
     f2~ %15
     f~
     f~
     f~
-    f4 f~
-    f8 d es f %20
+    f4 \pa f~\sf
+    f8 d es f \pd %20
     g h, c es
     d4 c\trill
-    b r
+    \pao b r
     r r8 c
-    b c d es %25
-    f b, c4\trill
-    b r
+    \pa b c d es %25
+    f b, c8.\trill b32 c
+    b4 \pd r
     R2*2
-    r4 r8 \once \tieDashed f'~\fE %30
-    f es4 d8~
-    d c4 b8
-    a2
+    r4 r8 f'\f %30
+    f es es d
+    d c c b
+    a2~
     a4. c8
-    b4 r %35
+    b r r4 %35
     R2*2
-    r4 r8 b~\fE
-    b es4 d8
+    r4 r8 \pa b\f
+    b es es d
     c d es g %40
-    f4. a,8
+    f4. a,8 \pd
     b4 r8 d
     c4. es8
     d4 r8 f
@@ -572,20 +572,20 @@ BenedictusOboeI = {
     \clef treble
     \key es \major \time 2/2 \tempoBenedictus
     R1*84 \noBreak %84
-    r2\fermata r4\fermata r \bar "||" %85
+    r2\fermata r4\fermata r8 r \bar "|" %85
     \twofourtime \key b \major \time 2/4 \tempoOsanna
       R2*3
-    r4 r8 f'\fE
+    r4 r8 f'\f
     f es es d %90
     d c c b
-    a2
+    a2~
     a4. c8
-    b4 r
+    b r r4
     R2*2 %96
-    r4 r8 b\fE
+    r4 r8 \pa b\fE
     b es es d
     c d es g
-    f4. a,8 %100
+    f4. a,8 \pd %100
     b4 r8 d
     c4. es8
     d4 r8 f
@@ -594,78 +594,80 @@ BenedictusOboeI = {
   }
 }
 
-DonaOboeI = {
+AgnusOboeI = {
   \relative c' {
     \clef treble
-    \twofourtime \key b \major \time 2/4 \tempoDona
-      \set Score.currentBarNumber = #41
-    R2*8 %48
+    \key b \minor \time 3/4 \tempoAgnus
+    R2.*53 \noBreak %53
+    R2.\fermata \bar "||"
+    \twofourtime \key b \major \time 2/4 \tempoDona \newSpacingSection
+      R2*8 %62
     d''4.\f c8
-    b4. a8 %50
-    g4. f8
+    b4. a8
+    g4. f8 %65
     f es d4
     f d
     es g
-    a,2 %55
-    b4 r
-    R2*24 %80
-    \tieDashed f'2~\fE
+    a,2
+    b4 r %70
+    R2*24 %94
+    f'2~\f %95
     f~
     f~
-    f \tieSolid
-    R2*4 %88
-    b4.\fE b8
-    a b c d %90
-    a4 g\trill
-    f r
-    R2*8 %100
-    f2\fE
+    f
+    R2*4 %102
+    b2\f
+    a8 b c d
+    a4 g\trill %105
+    \pao f r
+    R2*8 %114
+    f2\f %115
     d4 b
     c d
     c r
-    d'4. c8 %105
-    b4. a8
+    d'4. c8
+    b4. a8 %120
     g4. f8
     f es d4
     g a
-    b es, %110
-    d c
-    b f'~
+    b es,
+    d c %125
+    \pao b f'~
     f8 f f4~
     f8 f f4~
-    f8 f f4~ %115
-    f8 f f4
+    f8 f f4~
+    f8 f f4 %130
     es d
     es d
     c8 d es c
-    b4 a %120
-    R2*8 %128
-    f'2\pE
-    f %130
-    es4 d\trill
+    b4 a
+    R2*8 %142
+    f'2~\pp
+    f
+    es4 d\trill %145
     c r
     R2
-    es4.^\soloE c8
-    b a a4 %135
-    es'4. c8
-    b a a4
-    R2*7 %144
-    b'2~\fE %145
+    es4.\p c8
+    b( a) a4
+    es'4. c8 %150
+    b( a) a4
+    R2*7 %158
+    b'2~\f
+    b~ %160
     b~
     b~
-    b
     b8(-\dolce as g f)
-    f( e) e4 %150
-    b'8( as g f)
+    f( e) e4
+    b'8( as g f) %165
     f( e) e4
     es2\f
     d8 es f g
-    d4 c\trill %155
-    b r
-    R2*4 %160
-    f'2^\dolce^\solo
+    d4 c\trill
+    \pao b r %170
+    R2*4
+    f'2-\dolce %175
     g8( f es d)
     c2(\p
-    b4) r\fermata \bar "|." %164 FINIS
+    \scriptOut b4)-! r\fermata \bar "|." %178 finis
   }
 }

@@ -289,37 +289,37 @@ SanctusTimpani = {
     \clef bass
     \twofourtime \key c \major \time 3/4 \tempoSanctus
     R2.
-    c4\fE g r
+    c4\f g r
     R2.
-    g4\fE c r
-    c4. c8 c c %5
+    g4\f c r
+    c r8 c16 c c8 c %5
     c4 r r
-    g4. g8 g g
-    c4. c8 g g
-    c2 r4
-    g-\critnote r r %10
+    g4 r8 g16 g g8 g
+    c4 r8 c16 c g8 g
+    c4 r r
+    g r r %10
     R2.*2 \noBreak
     R2.\fermata \bar "||"
     \time 2/4 \tempoPleni R2 \noBreak
-    r4 r8 g %15
+    r4 r8 g\f %15
     c g r g
     c g r g
     c g c g
     c g r4
-    c2\startTrillSpan %20
-    c4\stopTrillSpan r
+    c2~\startTrillSpan %20
+    c8\stopTrillSpan r r4
     g8 g16 g g8 g
     c4 r
     R2*9 %32
-    g8\fE g g g
+    g8\fE g16 g g8 g
     g g g g
-    c4 r %35
+    c r r4 %35
     R2*5 %40
-    g8\fE g g g
+    g8\fE g16 g g8 g
     c4 r
-    g8 g g g
+    g8 g16 g g8 g
     c4 r
-    g8 g g g %45
+    g8 g16 g g8 g %45
     c4 r\fermata \bar "|." %46 finis
   }
 }
@@ -329,76 +329,79 @@ BenedictusTimpani = {
     \clef bass
     \key c \major \time 2/2 \tempoBenedictus
     R1*84 \noBreak %84
-    r2\fermata r4\fermata r \bar "||" %85
+    r2\fermata r4\fermata r8 r \bar "|" %85
     \twofourtime \time 2/4 \tempoOsanna
       R2*6 %91
-    g4\fE g
-    g8 g g g
-    c4 r
+    g8\f g16 g g8 g
+    g g g g
+    c r r4
     R2*5 %99
-    g8 g g g %100
+    g8\fE g16 g g8 g %100
     c4 r
-    g8 g g g
+    g8 g16 g g8 g
     c4 r
-    g8 g g g
+    g8 g16 g g8 g
     c4 r\fermata \bar "|." %105 finis
   }
 }
 
-DonaTimpani = {
+AgnusTimpani = {
   \relative c {
     \clef bass
-    \twofourtime \key c \major \time 2/4 \tempoDona
-      \set Score.currentBarNumber = #41
-    R2*8 %48
-    c4\fE r
-    c r %50
+    \key c \major \time 3/4 \tempoAgnus
+    R2.*53 \noBreak %53
+    R2.\fermata \bar "||"
+    \twofourtime \time 2/4 \tempoDona \newSpacingSection
+      R2*8 %62
+    c4\f r
     c r
+    c r %65
     c r
     R2*2
-    g8 g16 g g8 g %55
-    c4 r
-    R2*24 %80
-    g4\fE r
+    g8 g16 g g8 g
+    c4 r %70
+    R2*24 %94
+    g4\f r %95
     g r
-    g8 g g g
+    g8 g16 g g8 g
     g4 r
-    R2*4 %88
-    c8\fE c16 c c8 c
-    g4 r %90
-    R2
+    R2*4 %102
+    c8\f c16 c c8 c
     g4 r
-    R2*8 %100
-    g8\fE g16 g g8 g
+    R2 %105
+    g4 r
+    R2*8 %114
+    g8\f g16 g g8 g %115
     c c16 c c8 c
     g g c c
     g4 r
-    c r %105
+    c r
+    c r %120
     c r
     c r
-    c r
-    R2*2 %110
-    g8 g16 g g8 g
+    R2*2
+    g8 g16 g g8 g %125
     c4 r
     g r
     c r
-    g r %115
-    c r
+    g r
+    c r %130
     g c
     g c
     R2
-    g8 g16 g g8 g %120
-    R2*24 %144
-    c4\fE r %145
-    c r
+    g8 g16 g g8 g
+    g4 r %135
+    R2*23 %158
+    c4\f r
+    c r %160
     c8 c16 c c8 c
     c4 r
-    R2*4 %152
-    g8\fE g16 g g8 g
+    R2*4 %166
+    g8\f g16 g g8 g
     c4 r
-    g8 g16 g g8 g %155
-    c4 r
-    R2*7 %163
-    R2\fermata \bar "|." %174 FINIS
+    g8 g16 g g8 g
+    c4 r %170
+    R2*7 %177
+    R2\fermata \bar "|." %178 finis
   }
 }

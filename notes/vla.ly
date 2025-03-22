@@ -711,35 +711,35 @@ SanctusViola = {
     b f d' d c c
     b <g b> q q q q
     <f a>4 r r %10
-    <e, g>8 q q q q q
-    f8.. b32 a8.. b32 a8.. b32 \noBreak
+    <e, g>8\p q q q q q
+    f8..([ b32 a8.. b32 a8.. b32]) \noBreak
     a2.\fermata \bar "||"
     \time 2/4 \tempoPleni R2 \noBreak
-    r4 r8 f' %15
+    r4 r8 f'\f %15
     f f r f
     f f r f
     f f f f
     f f r4
     d8 f es d %20
     es as g g
-    f-\critnote f,4 es'8
+    f f,4 es'8
     d4 r8 d'
     c b a g
-    f f4 f16 a %25
-    b8 g4 f8
-    f4\p r
-    b, r
+    f f4 a8 %25
+    b g4 f8
+    d4\p r
     b r
-    b r %30
-    b'8\f b, a a'
-    g g, g' g
+    b r
+    b r8 b\f %30
+    b' b, a a'
+    g g, g g'
     f f,16 g a b c d
     es c a b c a f es
-    d8-!\p d-! d( f) %35
+    d8\p d-! d( f) %35
     b4 r
     R2
-    r4 r8 f'
-    es8\f b b b'
+    r4 r8 f'\f
+    es8 b b b'
     g g, g es' %40
     d b es c
     d f d b
@@ -767,36 +767,36 @@ BenedictusViola = {
     r as as as
     r g g r
     r g( f) r
-    r \once \slurDashed b( c) b
+    r b( \once \stemUp c b)
     r8 as as as r b b b %15
     r c r b r b r b
     as4 es' c as
     g( f) d8 d es es
     f4 f f f
     r a a c %20
-    d c b g-\critnote
+    d c b g
     r a a r
     r b d r
     r b es r
     r a, f r %25
     f8 f f' f es es g g
-    f f f f f f f f
-    d(\mf f b, f) a( c es c)
+    f2:8 f:
+    d8(\mf f b, f) a( c es c)
     b( d b f) a( c es c)
     b( d b f) a( c es c) %30
-    d d\p d d f f f f
-    b, b b b g' g g g
-    f f f f f f f f
-    f, f f f f f f f
-    b b b b b b b b %35
-    g g g g g g g g
-    a a a a f f f f
-    r f f f f4 r
-    r8 f f f f f f f
-    g g g g g g a a %40
+    d2:\p f:
+    b,: g':
+    f:\cresc f:
+    f: f:
+    d8 b\p b b b2: %35
+    g: g:
+    a: f:
+    r8 f f f f4 r
+    r8 f f f f2:
+    g: g8 g a a %40
     b b f f g g es es
-    d4 f2 f'4~
-    f b,2 f4
+    d4 b'2\sf f'4~
+    f b,2\sf f4
     f1
     r4 d' d d %45
     r es es es
@@ -805,13 +805,13 @@ BenedictusViola = {
     r b, b r
     r b b r %50
     r f2 f4
-    d <b' f'>2\fE q4
-    q1
-    <b es>4 es\pE es es
+    d <b' f'>2\< q4
+    q1~\>
+    <b es>4\! es es es
     r es es es %55
     r as, as as
-    r b-\critnote b as
-    b b2 as4(
+    r g g as(
+    b) b2 as4(
     b) b2 b4
     as r r c %60
     b2 b8 b as as
@@ -823,36 +823,36 @@ BenedictusViola = {
     r c c r
     r b b b
     b r c r
-    r8 b b b b b b b %70
-    g(\mf b es b) d( f as f)
+    r8 b b b b2: %70
+    g8(\mf b es b) d( f as f)
     es( g es b) d( f as f)
     es( g es b) d( f as f)
-    g b,\p b b b b b b
-    as as as as c c c c %75
-    b b b b b b b b
-    b b b b b b b b
-    b b b b b b h h
-    c c c c c c a a
-    b b b b b b a a %80
-    b b b b b b b b
-    b b b b b b b b
-    b b b b b b b b
+    g b,\p b b b2:
+    as: c: %75
+    b:\cresc b:
+    b: b:
+    g8 b\p b b b b h h
+    c2: c8 c a a
+    b2: b8 b a a %80
+    b2: b:
+    b2: b:
+    b2: b:
     g4 r r g \noBreak
-    f2\fermata f4\fermata r \bar "||" %85
+    f2\fermata f4.\fermata r8 \bar "|" %85
     \twofourtime \key b \major \time 2/4 \tempoOsanna
-      b4 r \noBreak
+      b4\p r \noBreak
     b r
     b r
     b r8 b
-    b'8\fE b, a a' %90
+    b'8\f b, a a' %90
     g g, g' g
     f f,16 g a b c d
     es c a b c a f es
-    d8-!\p d-! d( f)
+    d8\p d-! d( f)
     b4 r %95
     R2
-    r4 r8 f'
-    es8\f b b b'
+    r4 r8 f'\f
+    es8 b b b'
     g g, g es'
     d b es c %100
     d f d b
@@ -867,186 +867,190 @@ AgnusViola = {
   \relative c' {
     \clef alto
     \key b \minor \time 3/4 \tempoAgnus
-    \mvTr b4(\p-\conSord c des)
-    es8. f16 ges8 r r b
-    a4~\sfp a8 r r des,
-    c8.([ b16)] a8-\critnote r r4
-    <des, f>16 q q q q q q q q q q q %5
-    <es ges> q q q q q q q q q q q
-    <f as> q q q q q q q q q q q
-    b b b b a a a a b b b b
-    f'\fE f f f f f f f c\pE c c c
-    b b b b b b b b b b b b %10
-    des des des des c c c c c c c c
-    c c c c c c c c c c c c
-    des des des des des des des des b b b b
-    b b b b b b b b b b b b
-    f f f f b b b b b b b b %15
-    b b b b b b des des c c b b
-    b4( a8) ges'( f c)
-    des16( f,) f f f f f f f f f f
-    ges ges ges ges ges ges ges ges ges ges ges ges
-    as as as as as as as as ces ces ces ces %20
-    b b' heses heses as as ges ges f f es es
-    des ges, b b as as as as as as ges ges
-    f as as as as as as as as as as as
-    b b b b b b b b b b b b
-    b b b b b b b b as as as as %25
-    c\fE c c c c c c c b\pE b b b
-    f f f f f f f f f f f f
-    as as as as g g g g g g g g
-    g g g g g g g g g g g g
-    as as as as as as as as f f f f %30
-    f f f f f f f f as as as as
-    g? g g g as as as as c c c c
-    b b b b b b g g as as b b
-    c4~ c8 \once \slurDashed des( c g?)
-    as16 f f f f f f f f f f f %35
-    f f f f g g g g g g g g
-    g g g g as as as as a a a a
-    b b c c des des es es des des f f
-    b, b es es des des des des des des ces ces
-    b des des des des des des des des des des des %40
-    es es es es es es es es es es es es
-    es es es es es es es es des des des des
-    f\fE f f f ges ges ges ges f\pE f f f
-    es es es es es es es es es es es es
-    ges ges ges ges f f f f f f f f %45
-    b, b b b b b b b b b b b
-    b b b b b b b b b b b b
-    ces ces ces ces ces ces ces ces b b b b
-    a a a a a a a a b b a a
-    b b c c c c c c b b b b %50
-    a a a a a a <f c'> q <f des'> q g g
-    a a a a a a <f c'> q <f des'> q g g
-    a( b) b( a) a( b) b( a) a( b) b( a)
-    <f a>2 r4\fermata \bar "||" %%4 finis
-  }
-}
-
-DonaViola = {
-  \relative c' {
-    \clef alto
-    \twofourtime \key b \major \time 2/4 \tempoDona
-      \set Score.currentBarNumber = #41
-    b4\p r
+    b4(\p^\conSord c des)
+    es8.( f16) ges8-! r r b
+    a4.\sfp r8 r des,
+    c8.([ b16)] a8-! r r4
+    << {
+      f2.:16 %5
+      ges:
+      as:
+    } \\ {
+      des,:\sfp %5
+      es:\sfp
+      f:\sfp
+    } >>
+    b4:\pp a: b:
+    f'2:\f c4:\p
+    b2.:\cresc %10
+    des4:\f c: c:\p
+    c2.:
+    des2: b4:
+    b2.:
+    f4: b2: %15
+    b4: b16 b des des c c b b
+    b4( a8) ges'!([ f c)]
+    des16\sfp f, f f f2:
+    ges2.:\sfp
+    as!2:\sfp ces4: %20
+    b16 b' heses heses as as ges ges f f es es
+    des ges, b b as4: as16 as ges ges
+    f\pp as as as as2:
+    b2.:
+    b2: as4: %25
+    c2:\f b4:\p
+    as16\cresc f f f f2:
+    as4:\f g2:\p
+    g2.:
+    as2: f4: %30
+    f2: as4:
+    g: as: c:
+    b: b16 b g g as as b b
+    c4. des8( c g)
+    as16\fp f f f f2: %35
+    f4:\fp g2:
+    g4:\sfp as: a:
+    b16 b c c des des es es des des f f
+    b, b es es des4: des16 des ces ces
+    b\pp des des des des2: %40
+    es2.:
+    es2: des4:
+    f:\f ges!: f:\p
+    es2.:\cresc
+    ges!4:\f f2:\p %45
+    b,2.:
+    b:
+    ces2: b4:
+    a2: b16 b a a
+    b b c c c4: b: %50
+    << {
+      a: a16 a c c des des g, g
+      a4: a16 a c c des des g, g
+    } \\ {
+      a4: a16 a f f f f g g %51
+      a4: a16 a f f f f g g
+    } >>
+    a(\perd b) b( \hA a) a( b) b( \hA a) a( b) b( \hA a) \noBreak
+    a2.\!\fermata \bar "||"
+    \twofourtime \key b \major \time 2/4 \tempoDona \newSpacingSection
+      b4\p r \noBreak %55
     b4. d,8
     es4. f8
-    g a b4
-    b( c) %45
-    f f~
+    g( a) b4
+    b( c)
+    f f~ %60
     f g
-    c,8. f,16(\fE g a b c)
-    b8 f'4 es8
-    d d4 f8 %50
-    es es4 d8
+    c,8. f,16( g a b c)
+    b8\f f'4 es8
+    d d4 f8
+    es es4 d8 %65
     g, a b4
     b8 d g g
     g f es g
-    c, a4 c16 es %55
-    <d b f>4 r
+    c, a4 c8
+    b4 r %70
     b8\p b d d
     d d g g
-    a, a a a
-    b b b b %60
-    a a c c
+    a,2:8
+    b:
+    a8 a c c %75
     c c f f
-    g, g g g
-    a a a a
-    \slurDashed a( f) c'( g) %65
-    a( c) g( g') \slurSolid
+    g,2:
+    a:
+    a8( f) c'( g)
+    a( c) g( g') %80
     c,( g') c,( f)
-    c( e) c( g)
-    r e-! e( g)
-    r b-! b( g) %70
+    c( e c g)
     r e-! e( g)
     r b-! b( g)
+    r e-! e( g) %85
+    r b-! b( g)
     f e g4
-    a8 c d, d'
-    c f a, b %75
-    \afterGrace b4 { c16[ b] } a4
-    \once \slurDashed f8( f') \parOn g-\parenthesize-! \parOff g-\parenthesize-!
-    g f4 d8
-    c a c e,
-    f4 r %80
-    f8\f f' f f
+    a8( c d, d')
+    c( f a, b)
+    b4( a) %90
+    \once \slurDashed f8(\cresc f') g g
+    g( f f d)
+    c( a c e,)
+    f4 r
+    f8\f f' f f %95
     f a, a a
     d f f f
     f c c c
-    r c\p c c %85
-    r d d d
+    r c\p c c
+    r d d d %100
     r c c c
     r d d d
     c,\f c' c c
-    c f4 f8~ %90
-    f c4 b8
+    c f4 f8~
+    f c4 b8 %105
     a4 r
-    R2*3 %95
-    f4\p r
+    R2*3
+    f4\p r %110
     f r
     f r
     f r
-    f r %100
-    a8(\f c f c)
-    d( f b f)
+    f r
+    a8\f c f c %115
+    d f b f
     a f b f
     a f4 es8
-    d f4 es8 %105
-    d d4 f8
+    d f4 es8
+    d d4 f8 %120
     es es4 d8
     g, a b4
     b8 b es c
-    f d es g %110
-    b, d f es
+    f d es g
+    b, d f es %125
     d f b f
     c' a f a
     b d, f b
-    c a f a %115
-    b d, f b
+    c a f a
+    b d, f b %130
     c f,4 f8~
     f f4 f8
     es f g g,
-    f f' c a %120
-    f a\p a a
+    f f' c a
+    f a\p a a %135
     r c c c
     r f f f
     r f f f
-    r b, b b %125
-    r d d d
+    r b, b b
+    r d d d %140
     r f f f
-    r f f f8~
+    r f f f8
     f f4 f8~
-    f f4 f8~ %130
     f f4 f8~
-    f a f c
+    f f4 f8~ %145
+    f a( f c)
     r a-! a( c)
     r es-! es( c)
-    r a-! a( c) %135
-    r es-! es( c)
-    r a'-\parenthesize-! c( c,)
-    d f b, es
-    d b' d, es
-    es4 d %140
-    b8 b'4 b8~
-    b g4( es8)
-    f d f a,
+    r a-! a( c)
+    r es-! es( c) %150
+    r a'( c) c,
+    d( f b, es)
+    d( b' d, es)
+    es4 d
+    b8\cresc b'4 b8~ %155
+    b( g) g( es)
+    f( d f a,)
     b4 r
-    b8\f b' b b %145
-    b d, d d
+    b8\f b' b b
+    b d, d d %160
     g b b b
     b f f f
     r b,\p b b
-    r b b b %150
     r b b b
+    r b b b %165
     r b b b
     f\f f' f f
     f b4 b8~
-    b f4 es8 %155
-    d4 r
-    R2*4 %160
-    c2(\sfz
-    d4) r
+    b f4 es8
+    d4 r %170
+    R2*4
+    c2(\sfz %175
+    \scriptOut d4)-! r
     c2(\p
-    b4) r\fermata \bar "|." %164 FINIS
+    \scriptOut b4)-! r\fermata \bar "|." %178 finis
   }
 }

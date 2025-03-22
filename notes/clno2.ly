@@ -38,7 +38,7 @@ GloriaClarinoII = {
     R1*34 %105
     r4 g'2\f c,4
     R1*2
-    r4-\critnote c r c
+    r4 c r c
     e1\fermata %110
     R
     g2\f c4 g
@@ -304,9 +304,9 @@ SanctusClarinoII = {
     \clef treble
     \twofourtime \key c \major \time 3/4 \tempoSanctus
     R2.
-    c'4\fE g r
+    c'4\f g r
     R2.
-    g4\fE c r
+    g4\f c r
     c,4. c16 c c8 c %5
     c8. c'16 c4 r
     g4. g16 g g8 g
@@ -316,19 +316,19 @@ SanctusClarinoII = {
     R2.*2 \noBreak
     R2.\fermata \bar "||"
     \time 2/4 \tempoPleni R2 \noBreak
-    r4 r8 g' %15
+    r4 r8 g'\f %15
     c g r g
     c g r g
     c g c g
     c g r4
     c,8 c16 c c8 c %20
-    c4 r
+    c r r4
     c' g
     e r
     R2*9 %32
     g2~\fE
     g
-    e4 r %35
+    e8 r r4 %35
     R2*5 %40
     c'4\fE g
     e8 g e c
@@ -344,12 +344,12 @@ BenedictusClarinoII = {
     \clef treble
     \key c \major \time 2/2 \tempoBenedictus
     R1*84 \noBreak %84
-    r2\fermata r4\fermata r \bar "||" %85
+    r2\fermata r4\fermata r8 r \bar "|" %85
     \twofourtime \time 2/4 \tempoOsanna
       R2*6 %91
-    g'2~\fE
+    g'2~\f
     g
-    e4 r
+    e8 r r4
     R2*5 %99
     c'4\fE g %100
     e8 g e c
@@ -360,62 +360,64 @@ BenedictusClarinoII = {
   }
 }
 
-DonaClarinoII = {
+AgnusClarinoII = {
   \relative c' {
     \clef treble
-    \twofourtime \key c \major \time 2/4 \tempoDona
-      \set Score.currentBarNumber = #41
-    R2*8 %48
+    \key c \major \time 3/4 \tempoAgnus
+    R2.*53 \noBreak %53
+    R2.\fermata \bar "||"
+    \twofourtime \time 2/4 \tempoDona \newSpacingSection
+      R2*8 %62
     c4\f r
-    c r %50
     c r
+    c r %65
     c r
     R2*2
-    g'2 %55
-    c,4 r
-    R2*24 %80
-    g4\fE r
+    g'2
+    c,4 r %70
+    R2*24 %94
+    g4\f r %95
     g r
     g8 g16 g g8 g
     g4 r
-    R2*4 %88
-    d''2\fE
-    g,4 r %90
-    d'8 d16 d d8 d
+    R2*4 %102
+    d''2\f
     g,4 r
-    R2*8 %100
-    g8\fE g16 g g8 g
+    d'8 d16 d d8 d %105
+    g,4 r
+    R2*8 %114
+    g8\f g16 g g8 g %115
     c,4 e
     g c
     g r
-    c, r %105
-    c r
+    c, r
+    c r %120
     c r
     c r
     R2
-    c %110
-    c'4 g
+    c
+    c'4 g %125
     e r
     g4. g8
-    c g e c
-    g'4. g8 %115
-    c c, c4
-    g' c
+    c4. c8
+    g4. g8
+    c4. c8 %130
+    g4 c
     g c
-    d r8 d
-    c4 g %120
-    R2*24 %144
-    c,4\fE r %145
-    c r
+    d8 r r d
+    c4 g
+    R2*24 %158
+    c,4\f r
+    c r %160
     c8 c16 c c8 c
     c4 r
-    R2*4 %152
-    g'2\fE
+    R2*4 %166
+    g'2\f
     c4 r
-    c g %155
-    e r
-    R2*6 %162
-    \once \slurDashed g2(\p
-    e4) r\fermata \bar "|." %164 FINIS
+    c g
+    e r %170
+    R2*6 %176
+    g2(\p
+    \scriptOut e4)-! r\fermata \bar "|." %178 finis
   }
 }

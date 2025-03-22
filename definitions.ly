@@ -1,18 +1,23 @@
 \version "2.24.2"
 
 #(define option-movement-title-format "number-title")
-#(define option-print-all-bar-numbers #t)
+#(define option-print-all-bar-numbers #f)
 \include "ees.ly"
 \include "ees_articulate.ly"
 
 
 hA = \once \override Accidental.stencil = ##f
-mvTl = \once \override TextScript.X-offset = #-2
 accomp = \markup \remark "accomp."
 fivehatflat = \markup { \concat { \combine \figured-bass 5 \path #.15 #'((rmoveto 0 1.2) (rlineto .5 .5) (rlineto .5 -.5)) \raise #.3 \fontsize #-5 \flat } }
 
-vlne =    \markup \remark  "vlne"
-stac =    \markup \remark  "staccato"
+vlne = \markup \remark  "vlne"
+stac = \markup \remark  "staccato"
+
+perd = #(make-music
+  'DecrescendoEvent
+  'span-direction START
+  'span-type 'text
+  'span-text (markup (#:normal-text #:small "perd.")))
 
 
 tempoKyrie = \tempoMarkup "Andante"
@@ -24,11 +29,11 @@ tempoCredo = \tempoMarkup "Allegro"
   tempoEtIncarnatus = \tempoMarkup "Adagio"
   tempoEtResurrexit = \tempoMarkup "Allegro vivace"
 tempoSanctus = \tempoMarkup "Andante"
-  tempoPleni = \tempoMarkup "Allegro"
+  tempoPleni = \tempoMarkup "Allegro molto"
 tempoBenedictus = \tempoMarkup "Larghetto"
   tempoOsanna = \tempoMarkup "Allegro"
 tempoAgnus = \tempoMarkup "Adagio"
-  tempoDona = \tempoMarkup "Allegro assai"
+  tempoDona = \tempoMarkup "Allegro"
 
 
 \include "notes/ob1.ly"
@@ -41,6 +46,7 @@ tempoAgnus = \tempoMarkup "Adagio"
 \include "notes/vl1.ly"
 \include "notes/vl2.ly"
 \include "notes/vla.ly"
+\include "notes/vlc.ly"
 \include "notes/S.ly"
 \include "notes/A.ly"
 \include "notes/T.ly"

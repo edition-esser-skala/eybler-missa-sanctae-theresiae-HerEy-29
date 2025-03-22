@@ -489,24 +489,24 @@ SanctusOboeII = {
     \clef treble
     \twofourtime \key b \major \time 3/4 \tempoSanctus
     R2.
-    b'4\fE a r
+    b'4-!\f a-! r
     R2.
-    a4\fE b r
+    a4\f b r
     b2. %5
     b
     a
-    b8. c16 d4 r
+    b8.\turn c16 d4 r
     b2.
-    a4-\critnote r r %10
+    a4 r r %10
     R2.*2 \noBreak
     R2.\fermata \bar "||"
-    \time 2/4 \tempoPleni c8 f, f f \noBreak
-    \tieDashed f2~ %15
+    \time 2/4 \tempoPleni c8(\f f,) f f \noBreak
+    f2~ %15
     f~
     f~
     f~
-    f4 r \tieSolid
-    d'8 b4 d8 %20
+    f4 r
+    d'8 b b d %20
     es as, g c
     b4 a
     b r
@@ -515,14 +515,14 @@ SanctusOboeII = {
     f b,4 a8
     b4 r
     R2*2
-    r4 r8 d\fE %30
+    r4 r8 d\f %30
     b4 a
     g g
-    f2
+    f2~
     f4. es8
-    d4 r %35
+    d r r4 %35
     R2*2
-    r4 r8 b'\fE
+    r4 r8 b'\f
     b2
     g4 c8 es %40
     d b f es
@@ -539,15 +539,15 @@ BenedictusOboeII = {
     \clef treble
     \key es \major \time 2/2 \tempoBenedictus
     R1*84 \noBreak %84
-    r2\fermata r4\fermata r \bar "||" %85
+    r2\fermata r4\fermata r8 r \bar "|" %85
     \twofourtime \key b \major \time 2/4 \tempoOsanna
       R2*3
-    r4 r8 d'\fE
+    r4 r8 d'\f
     b4 a %90
     g g
-    f2
+    f2~
     f4. es8
-    d4 r
+    d r r4
     R2*2 %96
     r4 r8 b'\fE
     b2
@@ -561,67 +561,69 @@ BenedictusOboeII = {
   }
 }
 
-DonaOboeII = {
+AgnusOboeII = {
   \relative c' {
     \clef treble
-    \twofourtime \key b \major \time 2/4 \tempoDona
-      \set Score.currentBarNumber = #41
-    R2*8 %48
-    f'4.\fE es8
-    d4. f8 %50
-    es4. d8
+    \key b \minor \time 3/4 \tempoAgnus
+    R2.*53 \noBreak %53
+    R2.\fermata \bar "||"
+    \twofourtime \key b \major \time 2/4 \tempoDona \newSpacingSection
+      R2*8 %62
+    f'4.\f es8
+    d4. f8
+    es4. d8 %65
     d c b4
     d h
     c es
-    es,2 %55
-    d4 r
-    R2*24 %80
-    b'2\fE
+    es,2
+    d4 r %70
+    R2*24 %94
+    b'2\f %95
     a
     d
     c
-    R2*4 %88
-    g'2\fE
-    f4 f~ %90
-    f e
+    R2*4 %102
+    g'2\f
+    f4 f~
+    f e\trill %105
     f r
-    R2*8 %100
-    a,2\fE
+    R2*8 %114
+    a,2\f %115
     b
     a4 b
     a r
-    f'4. es8 %105
-    d4. f8
+    f'4. es8
+    d4. f8 %120
     es4. d8
     d c b4
     b c
-    d b~ %110
-    b a
+    d b~
+    b a %125
     b f~
     f8 f f4~
     f8 f f4~
-    f8 f f4~ %115
-    f8 f f4
+    f8 f f4~
+    f8 f f4 %130
     c' b
     c b
     g8 h c g
-    f2 %120
-    R2*8 %128
-    f2\pE
-    f %130
-    c'4 b\trill
+    f2
+    R2*8 %142
+    f2~\pp
+    f
+    c'4 b\trill %145
     a r
-    R2*12 %144
-    es'2\f %145
-    d
+    R2*12 %158
+    es'2\f
+    d %160
     g
     f
-    R2*4 %152
+    R2*4 %166
     c2\f
     b4 b~
-    b a %155
-    b r
-    R2*7 %163
-    R2\fermata \bar "|." %164 FINIS
+    b a\trill
+    b r %170
+    R2*7 %177
+    R2\fermata \bar "|." %178 finis
   }
 }

@@ -304,9 +304,9 @@ SanctusClarinoI = {
     \clef treble
     \twofourtime \key c \major \time 3/4 \tempoSanctus
     R2.
-    e'4\fE d r
+    e'4\f d r
     R2.
-    d4\fE e r
+    d4\f e r
     c4. c16 c c8 c %5
     c8. f16 f4 r
     d4. d16 d d8 d
@@ -316,19 +316,19 @@ SanctusClarinoI = {
     R2.*2 \noBreak
     R2.\fermata \bar "||"
     \time 2/4 \tempoPleni R2 \noBreak
-    r4 r8 d' %15
+    r4 r8 d'\f %15
     e d r d
     e d r d
     e d e d
     e d r4
     c8 c16 c c8 c %20
-    c4 r
+    c r r4
     e d
     c r
     R2*9 %32
     d2~\fE
     d
-    c4 r %35
+    c8 r r4 %35
     R2*5 %40
     e4\fE d
     c8[ g c e]
@@ -344,12 +344,12 @@ BenedictusClarinoI = {
     \clef treble
     \key c \major \time 2/2 \tempoBenedictus
     R1*84 \noBreak %84
-    r2\fermata r4\fermata r \bar "||" %85
+    r2\fermata r4\fermata r8 r \bar "|" %85
     \twofourtime \time 2/4 \tempoOsanna
       R2*6 %91
-    d'2~\fE
+    d'2~\f
     d
-    c4 r
+    c8 r r4
     R2*5 %99
     e4\fE d %100
     c8[ g c e]
@@ -360,62 +360,64 @@ BenedictusClarinoI = {
   }
 }
 
-DonaClarinoI = {
+AgnusClarinoI = {
   \relative c' {
     \clef treble
-    \twofourtime \key c \major \time 2/4 \tempoDona
-      \set Score.currentBarNumber = #41
-    R2*8 %48
+    \key c \major \time 3/4 \tempoAgnus
+    R2.*53 \noBreak %53
+    R2.\fermata \bar "||"
+    \twofourtime \time 2/4 \tempoDona \newSpacingSection
+      R2*8 %62
     c'4\f r
-    c r %50
     c r
+    c r %65
     c r
     R2*2
-    d2 %55
-    c4 r
-    R2*24 %80
-    g4\fE r
+    d2
+    c4 r %70
+    R2*24 %94
+    g4\f r %95
     g r
     g8 g16 g g8 g
     g4 r
-    R2*4 %88
-    d'2\fE
-    g,4 r %90
-    d'8 d16 d d8 d
+    R2*4 %102
+    d'2\f
+    g,4 r
+    d'8 d16 d d8 d %105
     d4 r
-    R2*8 %100
-    d8\fE d16 d d8 d
+    R2*8 %114
+    d8\f d16 d d8 d %115
     e4 c
     d e
     d r
-    c r %105
     c r
+    c r %120
     c r
     c r
     R2
-    c %110
-    e4 d
+    c
+    e4 d %125
     c r
     d4. d8
     e4. e8
-    d4. d8 %115
-    e4. e8
+    d4. d8
+    e4. e8 %130
     d4 e
     d e
-    f r8 f
-    e4 d %120
-    R2*24 %144
-    c4\fE r %145
-    c r
+    f8 r r f
+    e4 d
+    R2*24 %158
+    c4\f r
+    c r %160
     c8 c16 c c8 c
     c4 r
-    R2*4 %152
-    d2\fE
+    R2*4 %166
+    d2\f
     e4 r
-    e d %155
-    c r
-    R2*6 %162
+    e d
+    c r %170
+    R2*6 %176
     d2(\p
-    c4) r\fermata \bar "|." %164 FINIS
+    \scriptOut c4)-! r\fermata \bar "|." %178 finis
   }
 }
