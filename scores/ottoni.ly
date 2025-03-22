@@ -121,6 +121,7 @@
   \bookpart {
     \section "4" "Sanctus"
     \addTocEntry
+    \paper { system-count = #6 }
     \score {
       <<
         \new StaffGroup <<
@@ -142,7 +143,7 @@
   \bookpart {
     \section "5" "Benedictus"
     \addTocEntry
-    \paper { systems-per-page = #3 }
+    \paper { system-count = #2 }
     \score {
       <<
         \new StaffGroup <<
@@ -160,27 +161,25 @@
         \new Staff { \BenedictusTimpani }
       >>
     }
-    \tacet "section" "Agnus Dei"
   }
   \bookpart {
-    \subsection "Dona nobis pacem"
+    \section "6" "Agnus Dei"
     \addTocEntry
-    \paper { page-count = #2 }
     \score {
       <<
         \new StaffGroup <<
           \new GrandStaff <<
             \new Staff {
               \set Staff.instrumentName = "1"
-              \DonaClarinoI
+              \AgnusClarinoI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \DonaClarinoII
+              \AgnusClarinoII
             }
           >>
         >>
-        \new Staff { \DonaTimpani }
+        \new Staff { \AgnusTimpani }
       >>
     }
   }

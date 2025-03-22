@@ -12,7 +12,7 @@
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Viola"
+          \set Staff.instrumentName = "Viole"
           \KyrieViola
         }
       >>
@@ -57,7 +57,7 @@
   \bookpart {
     \subsection "Et incarnatus est"
     \addTocEntry
-    \paper { systems-per-page = #6 }
+    \paper { systems-per-page = #3 }
     \score {
       <<
         \new Staff { \EtIncarnatusViola }
@@ -76,6 +76,7 @@
   \bookpart {
     \section "4" "Sanctus"
     \addTocEntry
+    \paper { systems-per-page = #7 }
     \score {
       <<
         \new Staff { \SanctusViola }
@@ -97,15 +98,6 @@
     \score {
       <<
         \new Staff { \AgnusViola }
-      >>
-    }
-  }
-  \bookpart {
-    \subsection "Dona nobis pacem"
-    \addTocEntry
-    \score {
-      <<
-        \new Staff { \DonaViola }
       >>
     }
   }

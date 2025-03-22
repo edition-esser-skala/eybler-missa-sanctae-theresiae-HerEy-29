@@ -62,6 +62,7 @@
   \bookpart {
     \subsection "Et incarnatus est"
     \addTocEntry
+    \paper { systems-per-page = #6 }
     \score {
       <<
         \new Staff { \EtIncarnatusOrgano }
@@ -107,16 +108,6 @@
       <<
         \new Staff { \AgnusOrgano }
         \new FiguredBass { \AgnusBassFigures }
-      >>
-    }
-  }
-  \bookpart {
-    \subsection "Dona nobis pacem"
-    \addTocEntry
-    \score {
-      <<
-        \new Staff { \DonaOrgano }
-        \new FiguredBass { \DonaBassFigures }
       >>
     }
   }

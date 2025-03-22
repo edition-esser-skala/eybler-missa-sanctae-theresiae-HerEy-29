@@ -7,33 +7,69 @@
   \bookpart {
     \section "1" "Kyrie"
     \addTocEntry
-    \paper { indent = 2\cm }
+    \paper {
+      top-system-spacing.basic-distance = #20
+      top-system-spacing.minimum-distance = #20
+      top-markup-spacing.basic-distance = #5
+      top-markup-spacing.minimum-distance = #5
+      markup-system-spacing.basic-distance = #15
+      markup-system-spacing.minimum-distance = #15
+      systems-per-page = #1
+      indent = 2\cm
+    }
     \score {
       <<
-        \new ChoirStaff <<
+        \new ChoirStaff \with { \setGroupDistance #13 #15 } <<
+          \set ChoirStaff.instrumentName = \markup { \rotate #90 "S O L I" \hspace #10 }
           \new Staff {
             \set Staff.instrumentName = "Soprano"
-            \new Voice = "Soprano" { \dynamicUp \KyrieSopranoNotes }
+            \new Voice = "SopranoSolo" { \dynamicUp \KyrieSopranoSoloNotes }
           }
-          \new Lyrics \lyricsto Soprano \KyrieSopranoLyrics
+          \new Lyrics \lyricsto SopranoSolo \KyrieSopranoSoloLyrics
 
           \new Staff {
             \set Staff.instrumentName = "Alto"
-            \new Voice = "Alto" { \dynamicUp \KyrieAltoNotes }
+            \new Voice = "AltoSolo" { \dynamicUp \KyrieAltoSoloNotes }
           }
-          \new Lyrics \lyricsto Alto \KyrieAltoLyrics
+          \new Lyrics \lyricsto AltoSolo \KyrieAltoSoloLyrics
 
           \new Staff {
             \set Staff.instrumentName = "Tenore"
-            \new Voice = "Tenore" { \dynamicUp \KyrieTenoreNotes }
+            \new Voice = "TenoreSolo" { \dynamicUp \KyrieTenoreSoloNotes }
           }
-          \new Lyrics \lyricsto Tenore \KyrieTenoreLyrics
+          \new Lyrics \lyricsto TenoreSolo \KyrieTenoreSoloLyrics
 
           \new Staff {
             \set Staff.instrumentName = "Basso"
-            \new Voice = "Basso" { \dynamicUp \KyrieBassoNotes }
+            \new Voice = "BassoSolo" { \dynamicUp \KyrieBassoSoloNotes }
           }
-          \new Lyrics \lyricsto Basso \KyrieBassoLyrics
+          \new Lyrics \lyricsto BassoSolo \KyrieBassoSoloLyrics
+        >>
+        \new ChoirStaff \with { \setGroupDistance #13 #15 } <<
+          \set ChoirStaff.instrumentName = \markup { \rotate #90 "T U T T I" \hspace #10 }
+          \new Staff {
+            \set Staff.instrumentName = "Soprano"
+            \new Voice = "SopranoTutti" { \dynamicUp \KyrieSopranoTuttiNotes }
+          }
+          \new Lyrics \lyricsto SopranoTutti \KyrieSopranoTuttiLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "Alto"
+            \new Voice = "AltoTutti" { \dynamicUp \KyrieAltoTuttiNotes }
+          }
+          \new Lyrics \lyricsto AltoTutti \KyrieAltoTuttiLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "Tenore"
+            \new Voice = "TenoreTutti" { \dynamicUp \KyrieTenoreTuttiNotes }
+          }
+          \new Lyrics \lyricsto TenoreTutti \KyrieTenoreTuttiLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "Basso"
+            \new Voice = "BassoTutti" { \dynamicUp \KyrieBassoTuttiNotes }
+          }
+          \new Lyrics \lyricsto BassoTutti \KyrieBassoTuttiLyrics
         >>
         \new Staff {
           \set Staff.instrumentName = "Organo"
@@ -81,9 +117,25 @@
   \bookpart {
     \subsection "Qui tollis"
     \addTocEntry
+    \paper {
+      top-system-spacing.basic-distance = #20
+      top-system-spacing.minimum-distance = #20
+      top-markup-spacing.basic-distance = #5
+      top-markup-spacing.minimum-distance = #5
+      markup-system-spacing.basic-distance = #15
+      markup-system-spacing.minimum-distance = #15
+      systems-per-page = #2
+    }
     \score {
       <<
-        \new ChoirStaff <<
+        \new ChoirStaff \with { \setGroupDistance #13 #15 } <<
+          \new Staff {
+            \set Staff.instrumentName = \markup \center-column { "T" "solo" }
+            \new Voice = "TenoreSolo" { \dynamicUp \QuiTollisTenoreSoloNotes }
+          }
+          \new Lyrics \lyricsto TenoreSolo \QuiTollisTenoreSoloLyrics
+        >>
+        \new ChoirStaff \with { \setGroupDistance #13 #15 } <<
           \new Staff {
             \set Staff.instrumentName = "S"
             \new Voice = "Soprano" { \dynamicUp \QuiTollisSopranoNotes }
@@ -98,9 +150,9 @@
 
           \new Staff {
             \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \QuiTollisTenoreNotes }
+            \new Voice = "TenoreTutti" { \dynamicUp \QuiTollisTenoreTuttiNotes }
           }
-          \new Lyrics \lyricsto Tenore \QuiTollisTenoreLyrics
+          \new Lyrics \lyricsto TenoreTutti \QuiTollisTenoreTuttiLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
@@ -355,41 +407,6 @@
         >>
         \new Staff { \AgnusOrgano }
         \new FiguredBass { \AgnusBassFigures }
-      >>
-    }
-  }
-  \bookpart {
-    \subsection "Dona nobis pacem"
-    \addTocEntry
-    \score {
-      <<
-        \new ChoirStaff <<
-          \new Staff {
-            \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \DonaSopranoNotes }
-          }
-          \new Lyrics \lyricsto Soprano \DonaSopranoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \DonaAltoNotes }
-          }
-          \new Lyrics \lyricsto Alto \DonaAltoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \DonaTenoreNotes }
-          }
-          \new Lyrics \lyricsto Tenore \DonaTenoreLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \DonaBassoNotes }
-          }
-          \new Lyrics \lyricsto Basso \DonaBassoLyrics
-        >>
-        \new Staff { \DonaOrgano }
-        \new FiguredBass { \DonaBassFigures }
       >>
     }
   }

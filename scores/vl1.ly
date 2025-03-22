@@ -8,7 +8,10 @@
   \bookpart {
     \section "1" "Kyrie"
     \addTocEntry
-    \paper { indent = 2\cm }
+    \paper {
+      system-count = #23
+      indent = 2\cm
+    }
     \score {
       <<
         \new Staff {
@@ -43,7 +46,7 @@
       <<
         \new Staff { \QuoniamViolinoI }
       >>
-      \layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/8) }
+      \layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/16) }
     }
   }
   \bookpart {
@@ -58,7 +61,7 @@
   \bookpart {
     \subsection "Et incarnatus est"
     \addTocEntry
-    \paper { systems-per-page = #6 }
+    \paper { systems-per-page = #4 }
     \score {
       <<
         \new Staff { \EtIncarnatusViolinoI }
@@ -98,15 +101,6 @@
     \score {
       <<
         \new Staff { \AgnusViolinoI }
-      >>
-    }
-  }
-  \bookpart {
-    \subsection "Dona nobis pacem"
-    \addTocEntry
-    \score {
-      <<
-        \new Staff { \DonaViolinoI }
       >>
     }
   }

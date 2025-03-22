@@ -8,7 +8,10 @@
   \bookpart {
     \section "1" "Kyrie"
     \addTocEntry
-    \paper { indent = 2\cm }
+    \paper {
+      indent = 2\cm
+      system-count = #13
+    }
     \score {
       <<
         \new Staff {
@@ -21,6 +24,7 @@
   \bookpart {
     \section "2" "Gloria"
     \addTocEntry
+    \paper { system-count = #15 }
     \score {
       <<
         \new Staff { \GloriaOboeII }
@@ -31,6 +35,7 @@
   \bookpart {
     \subsection "Quoniam"
     \addTocEntry
+    \paper { page-count = #2 }
     \score {
       <<
         \new Staff { \QuoniamOboeII }
@@ -49,7 +54,7 @@
   \bookpart {
     \subsection "Et incarnatus est"
     \addTocEntry
-    \paper { systems-per-page = #3 }
+    \paper { systems-per-page = #2 }
     \score {
       <<
         \new Staff { \EtIncarnatusOboeII }
@@ -84,14 +89,13 @@
         \new Staff { \BenedictusOboeII }
       >>
     }
-    \tacet "section" "Agnus Dei"
   }
   \bookpart {
-    \subsection "Dona nobis pacem"
+    \section "6" "Agnus Dei"
     \addTocEntry
     \score {
       <<
-        \new Staff { \DonaOboeII }
+        \new Staff { \AgnusOboeII }
       >>
     }
   }

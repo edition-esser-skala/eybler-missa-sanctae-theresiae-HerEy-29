@@ -4,7 +4,7 @@ composer:
 title: Missa Sanctæ Theresiæ
 id: HerEy 29
 genre: mass
-scoring: S, A, T, B (solo), S, A, T, B (coro), 2 ob,\\2 clno (\flat B), timp (\flat B–F), 2 vl, vla, vlc, b, org
+scoring: S, A, T, B (solo), S, A, T, B (coro),\\2 ob, 2 cor (\flat B), 2 clno (\flat B), timp (\flat B–F), 2 vl, vla, vlc solo, b, org
 license: cc-by-sa-4.0
 sources:
   A1:
@@ -17,6 +17,5 @@ imslp: Missa_Sanctae_Theresiae_HerEy_29_(Eybler,_Joseph)
 parts:
   cor12: Corno I, II in \flat B
   ottoni: Clarino I, II in \flat B\\Timpani in \flat B–F
-  vlc: Violoncello solo
   vla: Viole
   b: Violoncello \& Bassi

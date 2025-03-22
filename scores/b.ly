@@ -59,6 +59,19 @@
     \addTocEntry
     \score {
       <<
+        \new Staff {
+          \set Staff.instrumentName = \markup \center-column { "vlc" "solo" }
+          \EtIncarnatusCello
+        }
+      >>
+    }
+  }
+  \bookpart {
+    \subsection "Et incarnatus est"
+    \addTocEntry
+    \paper { systems-per-page = #6 }
+    \score {
+      <<
         \new Staff { \EtIncarnatusOrgano }
       >>
     }
@@ -85,6 +98,19 @@
   \bookpart {
     \section "5" "Benedictus"
     \addTocEntry
+    \paper { system-count = #23 }
+    \score {
+      <<
+        \new Staff {
+          \set Staff.instrumentName = \markup \center-column { "vlc" "solo" }
+          \BenedictusCello
+        }
+      >>
+    }
+  }
+  \bookpart {
+    \section "5" "Benedictus"
+    \addTocEntry
     \score {
       <<
         \new Staff { \BenedictusOrgano }
@@ -97,15 +123,6 @@
     \score {
       <<
         \new Staff { \AgnusOrgano }
-      >>
-    }
-  }
-  \bookpart {
-    \subsection "Dona nobis pacem"
-    \addTocEntry
-    \score {
-      <<
-        \new Staff { \DonaOrgano }
       >>
     }
   }
